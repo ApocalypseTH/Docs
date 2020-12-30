@@ -1,0 +1,75 @@
+\newcommand{\docNome}{ PIANO DI QUALIFICA }
+\newcommand{\docNomeProgetto}{ RGP PROJECT }
+\newcommand{\docVersione}{0.0.1}
+\newcommand{\docStatus}{in redazione}
+\newcommand{\docUso}{esterno}
+\newcommand{\docDescrizione}{
+	Il documento contiene un piano di qualifica che mira a garantire la qualità del prodotto.
+}
+
+\newcommand{\docDestinatari}{
+	Zero12 \\&
+        Prof. Tullio Vardanega \\&
+ 	Prof Riccardo Cardin \\&
+ 	EverBuilds
+}
+\newcommand{\docRedattori}{
+	Alberto Sinigaglia
+} 
+\newcommand{\docVerificatori}{
+}
+\newcommand{\docApprovazione}{
+}
+
+% ----- NON MODIFICARE SOTTO QUESTA RIGA -----
+
+% ---------------------------
+% Configurazioni
+% ---------------------------
+
+\documentclass[11pt,a4paper,table]{article}
+
+\input{res/config}    
+
+% ---------------------------
+% Dati frontespizio
+% ---------------------------
+
+\title{\hr \huge \textsc{\docNome} \\ 
+        \vspace{11pt} \large \textsc{\docNomeProgetto} \hr}
+
+\author{} % Non toccare
+\date{} % Non toccare
+
+% ---------------------------
+% Composizione del documento
+% ---------------------------
+
+\begin{document} 
+\mdseries
+% Frontespizio
+
+\pagenumbering{gobble}
+\DeactivateBG
+\include{res/first_page}
+
+% Registro delle modifiche
+
+\newpage
+\pagenumbering{arabic}
+\include{res/register}
+
+% Tabella dei contenuti
+
+\newpage
+\tableofcontents
+
+% Sezioni
+
+\newpage
+\input{res/sections}
+
+\end{document}
+
+
+% EOF
