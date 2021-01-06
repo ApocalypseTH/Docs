@@ -1,0 +1,79 @@
+\newcommand{\docNome}{ VERBALE RIUNIONE \#1 }
+\newcommand{\docVersione}{1.0.0}
+\newcommand{\docNomeProgetto}{ 2020/12/05 }
+\newcommand{\docStatus}{approvato}
+\newcommand{\docUso}{interno}
+
+% --------------
+
+\newcommand{\docRedattori}{
+	Alberto Sinigaglia \\&
+    	Marco Tesser
+}
+\newcommand{\docVerificatori}{
+	Samuele Sartor
+}
+\newcommand{\docApprovazione}{
+     	Riccardo Calcagno
+}
+
+% ----- NON MODIFICARE SOTTO QUESTA RIGA -----
+
+% ---------------------------
+% Configurazioni
+% ---------------------------
+
+\documentclass[11pt,a4paper,table]{article}
+
+\input{res/config}    
+
+% ---------------------------
+% Dati frontespizio
+% ---------------------------
+
+\title{\hr \huge \textsc{\docNome} \vspace{11pt} \large \textsc{\docNomeProgetto} \hr}
+
+\author{} % Non toccare
+\date{} % Non toccare
+
+% ---------------------------
+% Composizione del documento
+% ---------------------------
+
+\begin{document} 
+
+% Frontespizio
+
+\pagenumbering{gobble}
+\DeactivateBG
+\include{res/first_page}
+
+% Registro delle modifiche
+
+\pagenumbering{arabic}
+\include{res/register}
+\clearpage
+
+% Table of content
+\newpage
+\let\clearpage\relax
+\tableofcontents
+
+
+
+% Contenuto
+
+\newpage
+\input{res/body}
+
+
+
+% Registro Decisioni
+
+\newpage
+\input{res/summary}
+\newpage
+\end{document}
+
+
+% EOF
