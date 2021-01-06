@@ -1,0 +1,171 @@
+\section{Valutazione capitolati rimanenti}
+
+%--- capitolato C1
+	\subsection{Capitolato C1 - BlockCOVID}
+		\subsubsection{Informazioni generali}
+			\begin{itemize}
+				\item\textbf{Nome}: BlockCOVID
+				\item\textbf{Proponente}: Imola Informatica
+				\item\textbf{Committente}: Prof. Tullio Vardanega e Prof. Riccardo Cardin
+			\end{itemize}
+			
+		\subsubsection{Descrizione del capitolato}
+			Lo scopo del progetto è quello di contrastare i rischi di contagio dovuto da COVID-19 negli ambienti di lavoro, permettendo alle aziende di assicurare una pulizia giornaliera e una sanificazione periodica dei locali, degli ambienti, delle postazioni di lavoro e delle aree comuni.
+			Per il progetto si prendono in considerazione due casi d’uso:
+			\begin{itemize}
+				\item Tracciamento immutabile e certificato delle presenze in tempo reale alle postazioni di lavoro di un laboratorio informatico tramite dei tag RFID.
+				\item Tracciamento immutabile e certificato della pulizia delle postazioni di lavoro (sia effettuata dagli addetti alle pulizie che dai dipendenti con apposito kit) che devono risultare inutilizzabili se non ancora igienizzate.
+			\end{itemize}
+		\subsubsection{Finalità del progetto}
+			L’obiettivo del progetto è quello di realizzare un’applicazione in grado di segnalare ad un server dedicato la presenza o meno di un utente in una determinata postazione di lavoro appartenente ad una stanza.
+			Il server deve essere in grado di gestire più stanze e postazioni per:
+			\begin{itemize}
+				\item Monitorare le presenze nelle postazioni in maniera certificata e trasparente, sapere quindi se la postazione è occupata, prenotata o da pulire.
+				\item Realizzare una reportistica certificata dal sistema in modo automatico;
+				\item Prenotare una postazione di lavoro da remoto.
+				\item Consultazione della lista dei locali utilizzati almeno una volta dall’ultima igienizzazione.
+			\end{itemize}
+			Questo server sarà poi correlato di una user interface e di una applicazione per smartphone (Android/iOS) che permetterà di usufruire di tutti i servizi predisposti e sarà utilizzabile dall’amministratore del sistema, dai dipendenti e dagli addetti alle pulizie.
+		
+		\subsubsection{Tecnologie interessate}
+			L’azienda non impone tecnologie specifiche per lo sviluppo di server o della UI ma consiglia:
+			\begin{itemize}
+				\item\textbf{Java, Python, NodeJS}: per lo sviluppo del server back-end.
+				\item Protocolli asincroni per le comunicazioni app mobile-server.
+				\item\textbf{gRPC, Ethereum, RESTful API}: per salvare con opponibilità a terzi i dati di sanificazione.
+				\item\textbf{Swift/SwiftUI e Kotlin}:  linguaggi specifici per lo sviluppo mobile relativi rispettivamente agli ambienti: iOS (minimo iOS 13) e Android (minimo Android 8), è sufficiente fornire una soluzione basata solo su uno dei due ambienti (preferenza: iOS).
+				\item\textbf{IAAS Kubernetes,PAAS, Openshift o Rancher}: per il rilascio delle componenti del server e la gestione della scalabilità orizzontale.
+			\end{itemize}
+			
+		\subsubsection{Aspetti positivi}
+			\begin{itemize}
+				\item L’azienda mette a disposizione figure di supporto per gli studenti e server nei quali si potrà effettuare le installazioni dei componenti applicativi sviluppati.
+				\item Lo sviluppo del software che possa aiutare le imprese per la messa in sicurezza dei luoghi di lavoro durante la pandemia COVID-19 è risultato molto utile e necessario in questo periodo.
+				\item L’utilizzo di Java che è una tecnologia conosciuta dai membri del gruppo.
+				\item L’azienda ha esposto in maniera dettagliata i vari vincoli, i casi d’uso del capitolato e gli obiettivi che è necessario realizzare.
+			\end{itemize}
+			
+		\subsubsection{Criticità e fattori di rischio}
+			\begin{itemize}
+				\item Dare per scontato che tutti gli utenti si rechino nel posto di lavoro con lo smartphone, che registrino sempre la loro presenza in una postazione di lavoro usando il tag RFID e che segnalino la loro assenza nel caso dovessero spostarsi per del tempo.
+				\item Essendo l’applicazione su un dispositivo mobile, l’utilizzo del lettore RFID riduce l’autonomia del telefono e di conseguenza c’è la necessità di bilanciare nel miglior modo possibile batteria e scansioni.
+				\item Non ha suscitato abbastanza interesse tra i membri del gruppo.
+				\item Il gruppo ha scarse conoscenze della maggior parte delle tecnologie coinvolte, di conseguenza l’apprendimento delle tecnologie o delle strumentazioni previste potrebbe risultare lento per quei membri del gruppo che non le hanno mai utilizzate in precedenza. 
+			\end{itemize}
+		\subsection{Conclusioni}:
+			Il gruppo propende ad accantonare il capitolato in questione perchè non ha attirato le preferenze della maggior parte dei membri in quanto questo prodotto è richiesto soltanto in questo periodo di pandemia.
+
+				
+%--- capitolato C2
+	\subsection{Capitolato C2 - EmporioLambda}
+		\subsubsection{Informazioni generali}
+			\begin{itemize}
+				\item\textbf{Nome}: EmporioLambda
+				\item\textbf{Proponente}: Red Babel
+				\item\textbf{Committente}: Prof. Tullio Vardanega e Prof. Riccardo Cardin
+			\end{itemize}
+			
+		\subsubsection{Descrizione del capitolato}
+			Il capitolato richiede la creazione di un servizio di E-commerce dove chiunque possa registrarsi come cliente o venditore e interagire nello store tramite un’interfaccia semplice ma accattivante che porti all’utente una selezione varia e personalizzata di elementi.
+		\subsubsection{Finalità del progetto}
+			L’azienda richiede lo sviluppo di 3 principali funzionalità del servizio di E-Commerce:
+			\begin{itemize}
+				\item\textbf{Store}: richiesta di localizzazione geografica per il calcolo delle tasse e la disponibilità di prodotti non internazionali, calcolo di lealtà dallo storico ordini per coupon e sconti, gestione dei magazzini (disponibilità e rifornimento) e infine un sistema di brand/marketing che sia il più possibile adattivo per un'alta varietà di utenti;
+				\item\textbf{Serverless}: usando AWS lo scopo sarebbe quello di rimuovere la necessità di un server statico utilizzando quelli implementati dal servizio di Amazon;
+				\item Integrazioni di terze parti: per servizi come il pagamento, la gestione delle identità e il CMS (Content Management System).
+			\end{itemize}
+		\subsubsection{Tecnologie interessate}
+			\begin{itemize}
+				\item\textbf{TypeScript}:  linguaggio di programmazione che estende JavaScript aggiungendo la tipizzazione statica
+				\item\textbf{Next.js}:  framework web di sviluppo front-end open source che abilita funzionalità come il rendering lato server, la generazione di siti web statici per applicazioni web e la programmazione serverless di AWS
+				\item\textbf{AWS Lambda}: piattaforma di calcolo serverless guidata dagli eventi. È un servizio di calcolo che esegue codice in risposta ad eventi e automaticamente ne gestisce le risorse
+				\item\textbf{Amazon Cognito}: servizio di AWS per la registrazione, autenticazione e definizione dei ruoli
+				\item\textbf{Amazon CloudWatch}: servizio di monitoraggio e osservabilità che gestisce i log di AWS per ottenere una visualizzazione unificata dello stato di integrità operativa.
+			\end{itemize}
+			
+		\subsubsection{Aspetti positivi}
+			\begin{itemize}
+				\item Comprende l’utilizzo di tecnologie e strumenti volti allo sviluppo di web application, utile formazione per possibili progetti futuri nel mondo del lavoro della programmazione di siti web.
+				\item In totalità sia il progetto che l’azienda sembrano molto moderni e dinamici, oltre al fatto che i proponenti sono una coppia di ex studenti del nostro stesso corso, si potrebbero aprire molte possibilità future lavorando a stretto contatto con l’azienda.
+			\end{itemize}
+			
+		\subsubsection{Criticità e fattori di rischio}
+			\begin{itemize}
+				\item Non tutte le tecnologie sono espletate nel capitolato, come il servizio di pagamento.
+				\item Il progetto si basa quasi esclusivamente sul lato web, ciò ha fatto perdere interesse da parte del gruppo che vorrebbe addentrarsi in un progetto più vario per linguaggi di programmazione e pratica.
+			\end{itemize}
+		\subsection{Conclusioni}:
+			Proposta di capitolato valida e documentazione non troppo dispersiva, ma le tecnologie utilizzate sono limitate alla pura programmazione di un servizio web, il gruppo sembra propenso a scegliere per un’alternativa ugualmente stimolante e più varia per quanto riguarda l’innovazione delle proprie conoscenze di linguaggi di programmazione con una tipologia di progetto più orientato alla programmazione back-end che front-end di un sito web.
+
+				
+%--- capitolato C3
+	\subsection{Capitolato C3 - GDP}
+		\subsubsection{Informazioni generali}
+			\begin{itemize}
+				\item\textbf{Nome}: GDP - Gathering Detection Platform
+				\item\textbf{Proponente}: Sync Lab
+				\item\textbf{Committente}: Prof. Tullio Vardanega e Prof. Riccardo Cardin
+			\end{itemize}
+			
+		\subsubsection{Descrizione del capitolato}
+			Il capitolato proposto da Sync Lab fornisce le linee guida per la realizzazione di una piattaforma per la gestione e prevenzione degli assembramenti. 
+			Il prodotto software deve essere in grado di recepire ed analizzare i dati provenienti da diverse fonti eterogenee e fornire informazioni sullo stato di pericolosità di un determinato luogo.
+			Tali informazioni devono essere presentate graficamente e rese disponibili su una piattaforma web accessibile agli utenti. La piattaforma deve condividere lo stato di situazioni passate, fornendo uno storico sempre accessibile, presenti, illustrando in tempo reale la situazione, e future, cercando di fornire una soluzione preventiva.
+		\subsubsection{Finalità del progetto}
+			L’azienda richiede di soddisfare i seguenti obiettivi:
+			\begin{itemize}
+				\item Gestione dei dati ricevuti da diverse fonti eterogenee come telecamere, conta-persone, flussi di prenotazioni, dati forniti da Google e orari dei mezzi pubblici.
+				\item Realizzazione di un software che tramite machine learning conti le persone presenti in immagini e video ricevuti da telecamere installate su mezzi di trasporto.
+				\item capacità di acquisizione continuativa nel tempo e a bassa latenza.
+				\item rappresentazione delle variazioni nel tempo dei dati monitorati.
+				\item confronto e correlazione tra loro di dati provenienti da fonti diverse
+				\item archiviazione di tutti i dati acquisiti e dei risultati delle loro elaborazioni
+				\item Identificazione di eventi che in passato sono stati causa di alterazioni significative del flusso di persone
+				\item Creazione di indicatori automatici in grado di fornire supporto alla prevenzione di situazioni pericolose
+				\item Copertura dei test di almeno 80\% correlata di report
+			\end{itemize}
+		\subsubsection{Tecnologie interessate}
+			Il proponente non impone obbligatoriamente l’utilizzo di tecnologie specifiche ma si limita a suggerirne alcune. Tra le consigliate si trovano:
+			\begin{itemize}
+				\item\textbf{Java e Angular}:  per lo sviluppo delle parti di Back-end e di Front-end della componente Web Application del sistema.
+				\item\textbf{Leaflet}:  per la gestione della rappresentazione grafica
+				\item Protocolli asincroni per le comunicazioni tra le diverse componenti
+				\item Pattern Publisher/Subscriber e il  protocollo MQTT
+			\end{itemize}
+			
+		\subsubsection{Aspetti positivi}
+			\begin{itemize}
+				\item L’attualità del progetto è una caratteristica molto apprezzata dal gruppo.
+				\item La libertà di scegliere le tecnologie permette di fare uso dell’esperienza pregressa di alcuni membri del gruppo.
+				\item Sono stati segnalati diversi progetti realizzati sullo stesso tema.
+			\end{itemize}
+			
+		\subsubsection{Criticità e fattori di rischio}
+			\begin{itemize}
+				\item Non è chiaro come bisogna implementare il servizio di prevenzione.
+				\item La libertà concessa al gruppo di scegliere le varie tecnologie rischia di essere motivo di conflitto.
+				\item Molti aspetti essendo lasciati a discrezione del gruppo possono diventare criticità dato che possono creare discrepanze tra il prodotto immaginato dal proponente e quello fornito dal gruppo.
+			\end{itemize}
+		\subsection{Conclusioni}:
+			Il Gruppo di lavoro ha apprezzato la proposta da Sync Lab ma l’eccessiva libertà lasciata al gruppo è stata percepita come un rischio, per queste ragioni i membri del gruppo sembrano propensi ad accantonare questo capitolato per sceglierne un altro.
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
