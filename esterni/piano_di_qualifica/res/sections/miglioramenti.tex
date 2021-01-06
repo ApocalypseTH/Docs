@@ -1,0 +1,124 @@
+
+\section{Valutazioni di miglioramento}
+	In questa sezione si avrà un focus sui punti in cui si crede di poter migliorare nelle prossime fasi tenendo in considerazione il lavoro svolto fin ora, così da avere un miglioramento continuo, e potenzialmente evitare problemi avuti in passato.
+	In particolare si vuole mirare a trovare problemi (e relative soluzioni) di natura:
+	\begin{itemize}	
+		\item\textbf{organizzativa}: essendo il primo progetto realistico affrontato da tutti i membri del gruppo errori di natura organizzativa, son molto probabili, ma non per questo evitabili.
+		\item\textbf{validazione}: problemi che vanno contro quanto definito o prospettato, come errori nelle verifiche
+		\item\textbf{efficienza}: problemi che hanno rallentato l'avanzare del progetto
+	\end{itemize}
+	Di seguito vengono esposte le problematiche principali che il gruppo ha riscontrato, con possibilmente una futura contromisura per evitare di re-incontrare lo stesso problema
+	
+	
+	\subsection{Valutazioni sull'organizzazione}
+		\begin{center}
+			\rowcolors{2}{white}{lightest-grayest}
+			\begin{longtable}{|p{3cm}|p{1.5cm}|p{4cm}|p{4cm}|}
+			\hline
+			\rowcolor{lighter-grayer}
+			\textbf{Problema} &  \textbf{Gravità} &  \textbf{Descrizione} & \textbf{Contromisura}\\
+			\hline
+			\endfirsthead
+			\hline
+			Incontri comuni
+			&
+			1
+			&
+			È stato inizialmente un problema trovare un orario comune a tutti, per potersi confrontare e collaborare per la stesura dei documenti
+	  		&
+			Si può passare ad un modello più elastico in cui non tutti devono esser presenti per lo svolgimento del meeting, e gli assenti poi si aggiorneranno sfruttando il verbale steso al termine \\
+			\hline
+			
+			Incontri con proponente
+			&
+			3
+			&
+			La mail di incontro non è stata ricevuta dal proponente, causando seri problemi per gli analisti, in quanto come verrà descritto successivamente, si necessitava di un incontro per il chiarimento su alcuni ambiti del capitolato
+	  		&
+			Si passerà a un sistema di comunicazione più diretto ed efficace, così da evitare la perdita di messaggi, e diminuendo i tempi di risposta (se ne sta ancora discutendo con il proponente) \\
+			\hline
+			
+			
+			
+			\rowcolor{white}
+			\caption{Tabella contenente le valutazioni sull'organizzazione}
+			\end{longtable}
+		\end{center}
+
+	\subsection{Valutazioni sui ruoli}
+		\begin{center}
+			\rowcolors{2}{lightest-grayest}{white}
+			\begin{longtable}{|p{3cm}|p{6cm}|p{6cm}|}
+			\hline
+			\rowcolor{lighter-grayer}
+			\textbf{Ruolo} & \textbf{Problema rilevato} & \textbf{Contromisura}\\
+			\hline
+			\endfirsthead
+			\hline
+			Responsabile
+			 &
+			I lavori per questa prima fase son stati proposti dal responsabile, ma poi assegnati su base volontaria, portando così a uno squilibrio della mole di lavoro tra i singoli componenti
+			 &
+			Potenzialmente controllare al termine dell'assegnazione dei lavori, se la mole è equamente spartita, così da non portare rallentamenti dovuti all'attesa dei componenti con più lavoro assegnato \\
+			\hline
+		
+			Analista
+			 &
+			Essendo il capitolato molto lasco, è difficile trovare requisiti ben definiti al suo interno, senza dover ogni volta interpellare il proponente
+	 		&
+			La natura di questo problema è al di fuori della portata degli analisi, e di tutto il gruppo, ma si può adottare una politica più definita sui vari chiarimenti con il proponente, così da organizzare una data specifica un meeting nel quale porre tutte le domande sorte nel periodo intercorso dall'ultimo incontro. \\
+			\hline
+
+			Verificatori
+	 		&
+			Data l'inesperienza dei membri nell'attività di stesura dei documenti, è indispensabile che i verificatori controllino ogni sezione scrupolosamente. Per poter far tali verifiche, quest'ultimi necessitano di avere una certa conoscenza di tutte le tematiche trattate nella documentazione, e ciò richiede lo studio approfondito delle stesse
+	 		&
+			Dalla prossima volta, si definirà un verificatore per ogni task, così che ognuno sappia tutto il necessario del suo, e non debba sprecare tempo a fare tutto quello che necessita per cambiare contesto di verifica \\
+			\hline
+			Verificatori
+	 		&
+			Data la mole di documenti da verificare, la verifica "umana" può essere inefficace, come dimostra il grafico dell'andamento degli errori ortografici trovati nei vari documenti
+	 		&
+			Si cercherà quindi di automatizzare il più possibile tali verifiche tramite l'ausilio di sistemi automatizzati, come Github Actions, che procederà a validare il documento a ogni commit in modo automatizzato, così da cogliere gli errori di natura ortografica da solo (ma comunque si necessiterà della verifica umana per errori lessicali) \\
+			\hline
+
+			Amministratore
+	 		&
+			Per redarre i documenti, è stato necessario l'apprendimento di come svolgere la stesura di tali documenti in modo efficace ed efficiente, che data la mancanza di documenti di riferimento, ha comportato parecchi dubbi.
+	 		&
+			Si è deciso di prendere spunto dalla documentazione prodotta dai colleghi degli anni passati, confrontarla con quanto appreso durante il corso di \textit{ingegneria del software} e procedere alla stesura integrando le parti segnalate mancanti e correggendo quelle segnalate come sbagliate \\
+			\hline
+			\rowcolor{white}
+			\caption{Tabella contenente le valutazioni sui ruoli}
+			\end{longtable}
+		\end{center}
+
+
+	\subsection{Valutazioni sugli strumenti}
+
+		\begin{center}
+			\rowcolors{2}{lightest-grayest}{white}
+			\begin{longtable}{|p{3cm}|p{6cm}|p{6cm}|}
+			\hline
+			\rowcolor{lighter-grayer}
+			\textbf{Strumento} & \textbf{Problema rilevato} & \textbf{Contromisura}\\
+			\hline
+			\endfirsthead
+
+			\hline
+			\glock{Version Control System}
+	 		&
+			Nel \glock{way of working} del particolare \glock{vcs} utilizzato, si sono fissate diverse regole su come condividere il materiale prodotto nel server. Queste regole non sono state attuate da alcuni membri, vista l'inesperienza, e ciò ha portato a problemi nella fase di condivisione e integrazione del materiale prodotto con quello esistente.
+		 	&
+			Si sta redando un documento interno per l'utilizzo di Github per i vari componenti, così da avere un manuale di riferimento i caso di dubbi o problemi  \\
+			\hline
+			\LaTeX
+	 		&
+			Essendo nuovo a tutti i componenti del gruppo, questo strumento ha causato il rallentamento di non poco dell'avanzamento del progetto, a causa errori di compilazione molto poco esplicativi ai novizi.
+	 		&
+			Si è decido di utilizzare quindi dei template per la stesura dei vari documenti, così da evitare la maggior parte degli errori, e rendendo lo stile dei documenti uniforme e consistente, lasciando poi ai componenti solo il ruolo della scrittura delle sezioni che cambiando da documento a documento \\
+			\hline
+			\rowcolor{white}
+			\caption{Tabella contenente le valutazioni sugli strumenti}
+			\end{longtable}
+		\end{center}
