@@ -1,0 +1,139 @@
+\section{Test}
+	Per la classificazione dei test si fa riferimento alle sezioni Verifica e Validazione delle \dext{Norme di Progetto v1.0.0}.
+	
+
+	\subsection{Tipologie di test:}
+		I test saranno di quattro tipologie differenti:
+		\begin{itemize}
+
+			\item \textbf{Test di Accettazione [TA]}
+			\item \textbf{Test di Sistema [TS]}
+			\item \textbf{Test di Integrazione [TI]}
+			\item \textbf{Test di Unità [TU]}
+
+		\end{itemize}
+
+	\subsection{Test di Accettazione}
+	
+		I test di accettazione sono utilizzati per dimostrare che il prodotto sviluppato soddisfa tutti i requisiti individuati dal capitolato e concordati con il proponente: è alla presenza di questi, infatti, che tali test vengono eseguiti, in sede di collaudo finale del prodotto.
+		
+	\subsection{Test di Sistema}
+		\begin{center}
+		Riepilogo Test di Sistema
+			\rowcolors{2}{white}{lightest-grayest}
+			\begin{longtable}{|c|p{10cm}|c|}
+			\hline
+			\rowcolor{lighter-grayer}
+			\textbf{Codice} & \textbf{Descrizione} & \textbf{Stato}  \\ %& \textbf{Risultato}
+
+			\hline
+			\endhead
+
+	
+			\hline
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Test di sistema per i requisiti funzionali %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			 TSA-F-1 & Si verifichi che l'utente possa fare il login con il proprio account & NI \\
+			 \hline
+			 TSA-F-1 & Si verifichi che l'utente possa creare un account & NI \\
+			 %\hline
+			 %TSA-F-1.2.1 & Si verifichi che un utente al quale viene chiesto di inserire un codice di autenticazione a due fattori possa richiederne il rinvio & NI \\
+			 \hline
+			 
+			 TSA-F-1 & Si verifichi che l'utente possa modificare le impostazioni di gioco & NI \\
+			 \hline
+			 TSA-F-1.1 & Si verifichi che l'utente autenticato possa accedere alla sezione per la modifica dei dati per proprio account:
+			 \begin{itemize}
+			 	\item Visualizzazione e cambio nome utente
+			 	\item Visualizzazione e cambio email
+			 	\item Cambio password
+			 \end{itemize}
+			 & NI \\
+			 \hline
+			 TSA-F-3 & Si verifichi che un utente autenticato possa accedere ad una dashboard che mostra:
+			 \begin{itemize}
+			 	\item la possibilità di iniziare una partita single player;
+			 	\item la possibilità di iniziare una partita multi player;
+			 	\item la possibilità di silenziare il gioco;
+			 \end{itemize} & NI \\
+			 \hline
+			 TSA-F-4 & Si verifichi che un utente possa visualizzare la dashboard dei risultati di gioco  & NI \\
+			 \hline
+			 TSA-F-4 & Si verifichi che un utente possa una classifica generale di tutto il gioco  & NI \\
+			 \hline
+			 TSA-F-5 & Si verifichi che un utente autenticato in partita singola possa mettere in pausa il gioco & NI \\
+			 \hline
+			 TSA-F-6 & Si verifichi che un utente in partita possa spostare la sua posizione corrente & NI \\
+			 \hline
+			 TSA-F-6 & Si verifichi che un utente in partita perda vita in caso di collisione con nemico & NI \\
+			 \hline
+			 TSA-F-6 & Si verifichi che un utente in partita possa accumulare power-ups & NI \\
+			 \hline
+			 TSA-F-6 & Si verifichi che un utente possa giocare al massimo contro 5 avversari in multi-player & NI \\
+			 \hline
+			 TSA-F-6 & Si verifichi che un utente possa giocare all'infinito & NI \\
+			 \hline
+			  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Test di sistema per i requisiti prestazionali %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			 TSA-P-1 & Si verifichi che il server supporti carichi pesanti di richieste & NI \\ 
+			 \hline
+			 TSA-P-2 & Si verifichi che il server supporti richieste da dispositivi di natura diversa & NI \\
+			 \hline
+			 TSA-P-3 & Si verifichi che l'applicazione non sia troppo CPU-intensive & NI \\
+			 \hline
+			 TSA-P-5 & Si verifichi che i tempi di risposta della web app sia inferiore ai 3 secondi & NI \\
+			 \hline
+			 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Test di sistema per i requisiti di qualità %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			 TSB-Q-3.1 & Si verifichi che la documentazione delle API sia esaustiva e completa & NI \\
+			 \hline
+			 TSB-Q-6 & Si verifichi che il codice sorgente venga gestito tramite un sistema di versionamento. & NI \\
+			 \hline
+			 TSB-Q-6 & Si verifichi che il codice sorgente sia testato prima di esser integrato. & NI \\
+			 \hline
+			 TSB-Q-7 & Si verifichi che siano stati realizzati dei test di unità e di integrazione per verificare le singole componenti e i subsystem interni. & NI \\
+			 \hline
+			 TSB-Q-9 & Si verifichi che l'API risponda tramite JSON valido & NI \\
+			 \hline
+			 TSB-Q-10 & Si verifichi che l'API sia sviluppata tramite NodeJS & NI \\
+			 \hline
+			 TSB-Q-10 & Si verifichi che l'infrastruttura funzioni a microservizi: 
+			 \begin{itemize}
+			 	\item almeno un microservizio per l'autenticazione;
+			 	\item almeno un microservizio per la gestione delle classifiche;
+			 \end{itemize}& NI \\
+			 \hline
+			 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Test per i requisiti di vincolo %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			 TSA-V-1 & Si verifichi che i servizi di hosting siano basati su AWS & NI \\ 
+			 \hline
+			 TSA-V-6 & Si verifichi che il sistema faccia uso di HTTP per la comunicazione con l'API. & NI \\
+			 \hline
+			 TSA-V-6 & Si verifichi che il sistema sia basato a microservizi & NI \\
+			 \hline
+			 TSA-V-6 & Si verifichi che il sistema faccia uso API per la comunicazione con i client & NI \\
+			 \hline
+			 TSA-V-6 & Si verifichi che le API rispondano usando standard JSON & NI \\
+			 \hline
+			 TSA-V-6 & Si verifichi che il sistema supporti almeno 6 giocatori & NI \\
+			 \hline
+			 TSA-V-6 & Si verifichi che il sistema permetta la comunicazione tra client con Sistemi Operativi di versioni diverse & NI \\
+			 \hline
+			 TSA-V-6 & Si verifichi che il sistema permetta l'invio di dati dal client& NI \\
+			 \hline
+			 TSA-V-6 & Si verifichi che il sistema permetta di distinguere un giocatore da un'altro & NI \\
+			 \hline
+			 TSA-V-6 & Si verifichi che ogni parte del sistema sia testata adeguatamente & NI \\
+			 \hline
+			 TSA-V-6 & Si verifichi che la scelta della tecnologia di hosting sia ben fondata e documentata & NI \\
+			 \hline
+			 TSA-V-1.1 & Si verifichi che i microservizi siano indipendenti tra di loro & NI \\ 
+			 \hline
+			 TSB-V-1.2 & Si verifichi che la connessione al server avvenga tramite l'applicazione client & NI \\
+			 \hline
+			 \caption{Tabella contenente un riepilogo dei test di sistema}
+			\end{longtable}
+		\end{center}
+
+
+	\subsection{Test di Integrazione}
+		Le specifiche di questi test verranno definite successivamente rispettando il \glock{modello a V}. 
+
+	\subsection{Test di Unità}
+	 	Le specifiche di questi test verranno definite successivamente rispettando il \glock{modello a V}. 
