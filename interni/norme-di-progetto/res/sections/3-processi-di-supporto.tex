@@ -741,14 +741,14 @@
 					\item\textbf{QM-TS-VRF05 Complessità media dei test di classe (CMTC)}
 						\begin{itemize}
 							\item\textbf{Descrizione}: la metrica CMTC viene utilizzata per comprendere il quantitativo medio di test realizzati in relazione al numero di classi presenti nel componente software;
-							\item\textbf{Unità di misura}: numero decimale;
+							\item\textbf{Unità di misura}: percentuale
 							\item\textbf{Formula}: 
-								\[ CMTC = \frac{\mathit{numero\;totale\;di\;test}}{\mathit{numero\;totali\;di\;classi}} \]
+								\[ CMTC = \frac{\mathit{numero\;totale\;di\;test}}{\mathit{numero\;totali\;di\;classi}} \times 100\]
 							\item\textbf{Risultato}
 								\begin{itemize}
-									\item se il risultato è pari a 0, allora nel componente non è stato incluso in alcun test;
-									\item se il risultato è maggiore di 0 e minore di 1, allora in media ci possono essere delle classi prive di test;
-									\item se il risultato è maggiore di 1, allora in media ciascuna classe ha almeno un test.
+									\item se il risultato è pari a 0\%, allora nel componente non è stato incluso in alcun test;
+									\item se il risultato è maggiore di 0\% e minore di 100\%, allora in media ci possono essere delle classi prive di test;
+									\item se il risultato è maggiore di 100\%, allora in media ciascuna classe ha almeno un test.
 								\end{itemize}
 						\end{itemize}
 				\end{itemize}
