@@ -218,20 +218,37 @@
 				Il prodotto finale deve essere il più possibile vicino a quello desiderato rispetto a efficienza, aspettative, utilizzo, vincoli rispettati e se il prodotto finale è conforme a quanto descritto nell’ ”Analisi dei Requisiti”. Per questo motivo si procederà a definire delle metriche che si baseranno su quanto descritto in tale documento.\\
 				La valutazione delle conformità del prodotto finale ai requisiti richiesti verrà valutata tramite le seguenti metriche:\\
 				\begin{itemize}
-					\item\textbf{QM-PD-SVL01 Percentuale requisiti soddisfatti (PRS)}
+					\item\textbf{QM-PD-SVL01 Requisiti completati totali da piano di progetto fino a un determinato momento (RTOT)}
+						\begin{itemize}
+							\item\textbf{Descrizione}\\
+								la metrica permette di conoscere il numero di requisiti conclusi in un determinato momento, con riferimento il \dext{Piano di Progetto}\\
+							\item\textbf{Unità di misura}: intero
+							\item\textbf{Formula}\\
+								$$ \mathit{RTOT} = \sum_{r = \mathit{primo\;requisito}}^{\mathit{ultimo\;requisito}}
+  									\begin{cases}
+    										1       & \quad \text{se } r \text{ concluso in quel istante nel \dext{Piano di Progetto}}\\
+    										0  & \quad \text{se } r \text{ altrimenti}
+ 								 	\end{cases}
+								$$
+							\item\textbf{Risultato}\\
+								il numero di requisiti definiti da \dext{Piano di Progetto} che dovrebbero essere conclusi in un determinato momento
+								\newline
+								\newline
+								\newline
+						\end{itemize}
+					\item\textbf{QM-PD-SVL02 Percentuale requisiti soddisfatti (PRS)}
 						\begin{itemize}
 							\item\textbf{Descrizione}\\
 								la metrica permette di conoscere la percentuale dei requisiti di esposti nell’ “Analisi dei Requisiti” soddisfatti fino a quel momento, sulla base delle requisiti di qualità disponibili e espressi secondo metriche da noi definite;\\
 							\item\textbf{Unità di misura}: percentuale
 							\item\textbf{Formula}\\
-								\[PRS = \frac{\mathit{\#requisiti\;\;soddisfatti}}{\mathit{\#requisiti\;\;totali}} \times 100 \]
+								\[PRS = \frac{\mathit{\#requisiti\;\;soddisfatti}}{\mathit{RTOT}} \times 100 \]
 							\item\textbf{Risultato}\\
 								\begin{itemize}
-									\item se il risultato è pari a 0\%, nessun requisito è stato soddisfatto.
-									\item se il risultato è pari al 100\%, tutti i requisiti sono stati soddisfatti.
-									\item se il risultato è maggiore di 0\%, ma minore di 100\%, non tutti requisiti sono stati soddisfatti.
+									\item se il risultato è pari a 0\%, nessun requisito che dovrebbe esser soddisfatto, è stato soddisfatto.
+									\item se il risultato è pari al 100\%, tutti i requisiti che dovrebbero esser soddisfatti,  sono stati soddisfatti.
+									\item se il risultato è maggiore di 0\%, ma minore di 100\%, non tutti requisiti che dovrebbero esser soddisfatti, sono stati soddisfatti.
 								\end{itemize}
-							\item\textbf{Descrizione}\\
 						\end{itemize}
 				\end{itemize}
 		% rimosso per RR %
