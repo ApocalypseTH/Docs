@@ -8,12 +8,13 @@
 		
 	\paragraph{Obiettivi}
 		\begin{itemize}
-			\item \textbf{correttezza:} i documenti che saranno presentati non dovranno presentare errori ortografici di alcun genere
+			\item \textbf{correttezza}: i documenti che saranno presentati non dovranno presentare errori ortografici di alcun genere
+			\item \textbf{leggibilità}: i documenti che saranno presentati non dovranno poter esser leggibili al maggior numero di persone
 		\end{itemize}
 		
 		
 	\paragraph{Metriche}
-	La comprensione dei documenti viene valutata dai seguenti criteri:
+	La comprensibilità dei documenti viene valutata dai seguenti criteri:
 	\begin{itemize}
 		\item QM-PD-DOC01 \glock{Indice di Gulpease};
      		\item QM-PD-DOC02 Correttezza ortografica.
@@ -33,7 +34,7 @@
 			\rowcolor{lightest-grayest}
 			Correttezza ortografica & 0 & 0 \\
 			\hline
-			\caption{Indici di qualità per le metriche per la Gestione delle Risorse}
+			\caption{Indici di qualità per la comprensibilità della documentazione}
 		\end{longtable}		
 	\end{center}
 	
@@ -43,15 +44,15 @@
 	
 		\paragraph{Obiettivi}
 			\begin{itemize}
-				\item{Completezza dell'implementazione:}
-					Il prodotto finale deve adempiere a tutti i vincoli e fornire tutte le caratteristiche prefissati, ed esposti dentro al \dext{Analisi dei Requisiti}
-				\item{Accuratezza}: capacità del prodotto software di fornire i risultati desiderati con la precisione richiesta
+				\item\textbf{Completezza dell'implementazione}: il prodotto finale deve adempiere a tutti i vincoli e fornire tutte le caratteristiche prefissati, ed esposti dentro al \dext{Analisi dei Requisiti}
+				\item\textbf{Accuratezza}: capacità del prodotto software di fornire i risultati desiderati con la precisione richiesta
 			\end{itemize}
 		
 		\paragraph{Metriche}
 			La valutazione della conformità del prodotto finale verrà valutata tramite le seguenti metriche
 			\begin{itemize}
-     				\item  QM-PD-SVL01  Percentuale requisiti soddisfatti
+     				\item  QM-PD-SVL01  Percentuale requisiti soddisfatti (PRS)
+     				\item  QM-PD-SVL02  Requisiti completati totali da piano di progetto fino a un determinato momento (RTOT)
 			\end{itemize}
 		\paragraph{Indici di qualità}
 			\begin{center}
@@ -63,15 +64,15 @@
 				\hline
 				\endfirsthead
 				\hline
-				N\textsubscript{FI} & // & // \\
+				RTOT & // &// \\
 				\hline
-				N\textsubscript{FTOT} & // & // \\
-				\hline				\hline
-				C & 100\% & 100\% \\
+				PRS & $\geq RTOT$ & $\geq RTOT - 10\%$ \\
 				\hline
+				\rowcolor{white}
 				\caption{Indici di qualità per completezza del prodotto finale}
 				\end{longtable}
 			\end{center}
+				
 				
 	
 	
