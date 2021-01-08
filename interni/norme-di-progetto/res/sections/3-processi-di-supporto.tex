@@ -130,8 +130,8 @@
 			\begin{figure}[H]
     				\centering
     				\includegraphics[width=1.0\textwidth]{res/images/ciclo_di_vita.png}
-				\caption{Img.1 ciclo di vita della documentazione}
-				\label{fig:Img.1 ciclo di vita della documentazione}
+				\caption{Img.2 ciclo di vita della documentazione}
+				\label{fig:Img.2 ciclo di vita della documentazione}
 			\end{figure}
 			\paragraph{Dal concepimento all’approvazione }
 				I principali stadi del percorso che porta un documento formale dal suo concepimento alla sua approvazione sono:
@@ -523,8 +523,7 @@
 				Il repository Docs è composto da diversi branch:
 				\begin{itemize}
 					\item\textbf{master}: su cui vengono riportati i documenti nella loro versione definitiva approvata dal Responsabile di Progetto e pronta per la consegna ai destinatari;
-					\item\textbf{develop}: ramo di sviluppo in cui vengono riportati incrementalmente le modifiche apportate ai documenti e il codice, modifiche che devono essere verificate e  approvate dal Responsabile di Progetto.
-					\item\textbf{verifica/<numero>}: dove \textbf{<numero>} è un numero progressivo all’interno dell’insieme di tutti i branch di verifica. Questo tipo di branch consente al Verificatore di condurre la sua attività di verifica descritta alla sezione 000.
+					\item\textbf{develop}: ramo di sviluppo in cui vengono riportati incrementalmente le modifiche apportate ai documenti e il codice, I documenti e il codice qui memorizzati devono essere stati verificati.
 					\item\textbf{feature/<titoloIdentificativo>}: dove \textbf{<titoloIdentificativo>} è un titolo composto da parole con iniziali minuscole separate dal trattino ‘-’. Il titolo deve essere più descrittivo possibile per identificare il soggetto del branch cioè la feature da implementare.
 				\end{itemize}
 				Questa divisione è orientata ad uno sviluppo per feature, per cui, per lavorare alla stesura di un documento nel proprio repository locale, ogni membro del gruppo deve:
@@ -538,6 +537,14 @@
 					\item eseguire il comando \texttt{git commit -m} seguito da una breve descrizione del compito svolto;
 					\item eseguire il comando \texttt{git push} per pubblicare il proprio lavoro sul repository remoto e renderlo visibile a tutti i membri del gruppo.
 				\end{enumerate}
+				
+				\begin{figure}[H]
+    					\centering
+    					\includegraphics[width=1.0\textwidth]{res/images/comandi_GitHub.png}
+					\caption{img.3 comandi_GitHub}
+					\label{fig:img.3 comandi_GitHub}
+				\end{figure}
+				
 				Un documento resta sul proprio ramo durante tutta la stesura e verifica.  \\
 				Terminata la verifica, il documento viene spostato sul ramo \textbf{develop}, dove resterà fino a quando non sarà approvato dal Responsabile di Progetto. \\
 				A quel punto, viene spostato sul ramo \textbf{master}.
@@ -548,45 +555,58 @@
 				Per modifiche maggiori sui contenuti o sulla struttura dei documenti già approvati è necessario contattare il Responsabile di Progetto che ha approvato il documento, esporgli le modifiche che si intendono effettuare con la relativa motivazione e nel caso sia valutata positivamente apportarla effettivamente al documento.\\
 				In ambo i casi è opportuno commentare i propri commit con chiarezza per risalire facilmente alle modifiche.\\
 
-	\subsection{Gestione dei cambiamenti}
+	\subsection{Gestione dei problemi accidentali}
 		\subsubsection{Introduzione Processo}
 			\paragraph{Descrizione}
-				Il processo di “Gestione dei Cambiamenti” definisce una procedura da seguire per analizzare e rimuovere dei problemi, qualsiasi sia la loro origine, scoperti durante l'esecuzione del processo di sviluppo, di manutenzione o di altri processi.
+				Il processo di Gestione dei Problemi Accidentali definisce una procedura da seguire per analizzare e rimuovere dei problemi, qualsiasi sia la loro origine, scoperti durante l'esecuzione del processo di sviluppo, di manutenzione o di altri processi.
 			\paragraph{Obbiettivi}
-				L'obiettivo del processo di gestione dei cambiamenti è fornire un mezzo tempestivo, efficace e documentato per assicurarsi che tutti i problemi vengano analizzati, documentati, risolti e, in un'ottica di miglioramento continuo, evitati.
-		\subsubsection{Applicazione processo}
-			Il processo di gestione dei cambiamenti dovrà essere eseguito ogni volta che sarà necessario gestire un problema e dovrà soddisfare i seguenti requisiti:
+				L'obiettivo di questo processo è fornire un mezzo tempestivo, efficace ed per assicurarsi che tutti i problemi vengano analizzati, risolti, tracciati e, in un'ottica di miglioramento continuo, evitati.
+			\paragraph{Aspettative}
+			Il processo di “Gestione dei problemi accidentali” dovrà essere eseguito ogni volta che sarà necessario gestire un problema e dovrà soddisfare i seguenti requisiti: 
 			\begin{itemize}
-				\item il processo dovrà essere un ciclo chiuso, assicurandosi che:
-					\begin{itemize}
-						\item tutti i problemi rilevati dovranno essere prontamente riportati ed immessi nel processo di gestione dei cambiamenti;
-						\item dovranno essere avvisate le parti interessate;
-						\item le cause dovranno essere identificate, analizzate, nel limite del possibile rimosse e infine tracciate;
-					\end{itemize}
-				\item  verranno effettuate delle analisi per verificare la presenza di tendenze nei problemi riportati;
-				\item  il procedimento di risoluzione dei problemi verrà valutato: si valuterà che i problemi siano stati effettivamente risolti;
+				\item tutti i problemi rilevati dovranno essere prontamente riportati ed immessi nel processo di gestione dei cambiamenti;
+				\item dovranno essere avvisate prontamente le parti interessate;
+				\item le cause dovranno essere identificate, analizzate e nel limite del possibile rimosse.
 			\end{itemize}
-		\subsubsection{Classificazione cambiamenti}
+		\subsubsection{Classificazione dei problemi accidentali}
 			il processo deve assegnare un identificativo al problema categorizzarlo e dargli la giusta priorità, l’identificativo deve essere scritto nel seguente formato:
 			\begin{center}
-				\textbf{CMB:<priorità>-<numeroProgressivo>}
+				\textbf{PRB:<priorità>-<numeroProgressivo>}
 			\end{center}
 			dove:
 			\begin{itemize}
-				\item\textbf{CMB}: sta per Cambiamento
-				\item\textbf{priorità}: indica il grado di urgenza con cui la risoluzione è richiesta, può assumere i seguenti valori:
+				\item\textbf{PRB}: sta per problema accidentale;
+				\item\textbf{<priorità>}: indica il grado di urgenza con cui la risoluzione è richiesta, può assumere i seguenti valori:
 					\begin{itemize}
 						\item\textbf{A}: Priorità alta;
 						\item\textbf{M}: Priorità media;
 						\item\textbf{B}: Priorità bassa;
 					\end{itemize}
-				\item\textbf{}
+				\item\textbf{<numeroProgressivo}: indica un numero progressivo all’interno dell’elenco di tutti i problemi accidentali.
 			\end{itemize}
-		\subsubsection{Risoluzione dei problemi}
-			Quando uno o più problemi saranno rilevati, nel prodotto software o in un'attività, dovrà essere preparato un report aprendo una issue nell'ITS (Issue tracking System) utilizzato per ogni problema individuato. Lo stesso report dovrà essere parte integrante del procedimento che è stato descritto nell'attività di applicazione del processo.
+		\subsubsection{Issue di analisi del problema accidentale}
+			Quando uno o più problemi saranno rilevati, nel prodotto software o in un'attività, dovrà essere interpellato il Responsabile del progetto il quale si propone di aprire una nuova issue di analisi del problema accidentale nell'ITS (Issue Tracking System) che conterrà:
+			\begin{itemize}
+				\item\textbf{Titolo}: il titolo corrisponde al codice identificativo del problema accidentale nel formato riportato alla sezione precedente;
+				\item\textbf{Assegnatari}: Il responsabile aggiungerà il riferimento agli assegnatari della issue ovvero i verificatori che avranno il compito di aprire un processo di analisi della possibile criticità e nel limite del possibile sistemarla;
+				\item\textbf{Commento}: Il commento conterrà le seguenti informazioni:
+					\begin{itemize}
+						\item Dove è stata riscontrata la problematica;
+						\item Informazioni sullo stato del sistema in cui si è verificata la problematica;
+						\item Come si può replicare la problematica.
+					\end{itemize}				
+			\end{itemize}	
+		\subsubsection{Applicazione processo}
+			Il processo di gestione di un problema accidentale dovrà seguire il flusso di lavoro rappresentato in questo diagramma:
+			\begin{figure}[H]
+    				\centering
+    				\includegraphics[width=1.0\textwidth]{res/images/gestione_problemi_accidentali.png}
+				\caption{Img.4 gestione problemi accidentali}
+				\label{fig:Img.4 gestione problemi accidentali}
+			\end{figure}
 		\subsubsection{Strumenti}
-			\textbf{Github}: Per creare report si è deciso di utilizzare l'ITS fornito da GitHub, in quanto fornisce anche un sistema di versionamento ed è conosciuto da tutti i membri del gruppo.\\
-			Questo ITS fornisce inoltre la possibilità di collegare i commit del cambiamento con la issue legata al report, in modo tale da poter tracciare tutto il percorso dalla modifica alla risoluzione del problema.\\
+			\textbf{Github}: Questo ITS fornisce la possibilità di collegare la issue creata per analisi della problematica con la issue creata per la risoluzione della problematica.
+
 	\subsection{Verifica}
 		\subsubsection{Introduzione Processo}
 			\paragraph{Descrizione}
@@ -606,14 +626,15 @@
 					\item  I prodotti transitano per diversi stadi ognuno dei quali deve essere verificato;
 					\item  Permette di giungere all’attività di Validazione avendo garanzia che il prodotto abbia soddisfatto per tutto il suo ciclo di sviluppo i requisiti di realizzazione.
 				\end{itemize}
+				
 		\subsubsection{Verifica Documentazione}
 			Il processo di verifica attinente alla documentazione mette a disposizione dei verificatori due tecniche di indagine degli errori walkthrough e inspection, entrambe richiedono l’intervento manuale del verificatore. \\
-			La procedure che descrivono lo svolgimento dell’attività di verifica sono rappresentate nel seguente diagramma \\
+			La procedure che descrivono lo svolgimento dell’attività di verifica sono rappresentate nel seguente diagramma delle attività \\
 			\begin{figure}[H]
     				\centering
-    				\includegraphics[width=1.0\textwidth]{res/images/verifica}
-				\caption{Img.2 attività di verifica}
-				\label{fig:Img.2 attività di verifica}
+    				\includegraphics[width=1.0\textwidth]{res/images/attività_di_verifica.png}
+				\caption{Img.5 attività di verifica}
+				\label{fig:Img.5 attività di verifica}
 			\end{figure}
 			\paragraph{Walkthrough}
 				Consiste in una lettura del testo cercando errori ed anomalie a largo spettro senza un’idea precisa di quali tipi errori sarà possibile trovare. Ogni difetto rilevato dai verificatori sarà discusso con i redattori del testo allo scopo di evitare incomprensioni e concordare sulle modifiche necessarie.\\
@@ -634,11 +655,11 @@
 				\begin{itemize}
 					\item\textbf{Walkthrough}: analogo alla strategia descritta alla sezione 000;
 					\item\textbf{Inspection}: analogo alla strategia descritta alla sezione 000, con la differenza che le liste di controllo del codice adottate per svolgere l’attività si trovano alla sezione 000.
-					\item\textbf{Analisi statica automatizzata}: come strumento di analisi statica del codice automatizzata utilizziamo lo strumento: wrwerwe. nel paragrafo successivo definiamo le regole che possono essere verificate con questo strumento.
+					\item\textbf{Analisi statica automatizzata}: Nel progetto utilizzeremo uno strumento per automatizzare l'analisi statica del codice, nel paragrafo successivo definiremo le regole che possono essere verificate in questo modo.
 				\end{itemize}
-				\subparagraph{Norme di codifica automaticamente e staticamente verificabili}
-				%-- ancora da scrivere %
-			\paragraph{}
+				\subparagraph{Norme Analisi statica automatizzata}
+					A tempo debito la sezione conterrà le norme e le configurazioni scelte per lo strumento di analisi statica del codice.
+			\paragraph{Analisi Dinamica}
 				L’analisi dinamica è una tecnica di verifica attuata testando il codice generato per mezzo della sua esecuzione. Su di esso vengono generati ed eseguiti una serie di test case, per verificarne il corretto funzionamento e per rilevare eventuali scostamenti tra i risultati ottenuti e quanto atteso. \\
 				Tutti i test devono rispettare i seguenti criteri: \\
 				\begin{itemize}
@@ -659,7 +680,7 @@
 					Dopo aver eseguito i test su tutte le unità e sulla loro integrazione, si testa il sistema nella sua interezza, si testa il comportamento delle componenti del sistema che devono risultare: compatibili tra di loro e sincronizzate nei comportamenti e coese nello spartirsi le responsabilità.\\
 					I test di sistema caratterizzano la validazione del prodotto software finale, mezzo con il quale si verifica che tutti i requisiti siano soddisfatti in modo completo.\\
 				\paragraph{Test di Accettazione}
-				%-- mancaaa %
+					Anche detto test di collaudo È simile al test di sistema per l’oggetto testato, ma viene eseguito con la partecipazione dei committenti. Valida il prodotto e, in particolare, il soddisfacimento del cliente. Il superamento del test di collaudo garantisce che il software è pronto per essere rilasciato.
 				\paragraph{Codice identificativo dei test}
 					Per classificare le varie tipologie di test si utilizzerà il seguente formato:
 					\begin{center}
@@ -677,81 +698,9 @@
 							\end{itemize}
 						\item\textbf{<numeroProgressivo>} identifica un numero progressivo all’interno della lista di una specifica tipologia di test.
 					\end{itemize}
-	%-- mmmm in RR?
-\iffalse
 		\subsubsection{Metriche}
-			La presente sezione espone le metriche selezionate dal gruppo per misurare il raggiungimento degli obiettivi di qualità del processo di Verifica.
-			\paragraph{Verifica}
-				Durante tutta la fase di sviluppo, si vuole monitorare il processo di verifica (software) mettendo in luce aspetti che riguardano la complessità e la copertura di test a livello di codice. \\
-				Le metriche  adottate in questo processo sono:
-				\begin{itemize}
-					\item\textbf{QM-TS-VRF01 Code coverage (COCO)}
-						\begin{itemize}
-							\item\textbf{Descrizione}: la metrica verifica la copertura effettuata attraverso una suite di test, rispetto al codice prodotto del programma;
-							\item\textbf{Unità di misura}: percentuale
-							\item\textbf{Fonte}: i dati vengono recuperati attraverso le statistiche di Coveralls;
-							\item\textbf{Risultato}
-								\begin{itemize}
-									\item se il risultato è pari a 0\%, la copertura è nulla;
-									\item se il risultato è pari al 100\%, la copertura è totale;
-									\item se il risultato è maggiore di 0\%, ma minore di 100\%, la copertura è parziale.
-								\end{itemize}
-						\end{itemize}
-					\item\textbf{QM-TS-VRF02 Condition coverage (CONCO)}
-						\begin{itemize}
-							\item\textbf{Descrizione}: la metrica verifica che ogni condizione di tipo booleano realizzata con degli operatori logici, venga considerata sia vera che falsa nei test, questo permette di avere una migliore sensibilità sul controllo di flusso del programma;
-							\item\textbf{Unità di misura}: percentuale
-							\item\textbf{Fonte}: i dati vengono recuperati attraverso le statistiche di Coveralls;
-							\item\textbf{Formula}: 
-								\[ COCOV = \frac{\mathit{Numero\;di\;operandi\;eseguiti\;dai\;test}}{\mathit{Numero\;totale\;di\;operandi}} \times 100 \]
-							\item\textbf{Risultato}
-								\begin{itemize}
-									\item se il risultato è pari a 0\%, la copertura logica è nulla;
-									\item se il risultato è pari al 100\%, la copertura logica  è totale;
-									\item se il risultato è maggiore di 0\%, ma minore di 100\%, la copertura logica è parziale.
-								\end{itemize}
-						\end{itemize}
-					\item\textbf{QM-TS-VRF03 Passed test cases percentage (PTCP)}
-						\begin{itemize}
-							\item\textbf{Descrizione}: la metrica PTCP si utilizza per misurare la percentuale di test passati con successo in una specifica fase del progetto fino alla data corrente;
-							\item\textbf{Unità di misura}: percentuale
-							\item\textbf{Formula}: 
-								\[ PTCP = \frac{\mathit{Numero\;di\;test\;passati}}{\mathit{Numero\;totale\;di\;test\;eseguiti}} \times 100 \]
-							\item\textbf{Risultato}
-								\begin{itemize}
-									\item se il risultato è pari a 0\%, nessun test realizzato per il software è andato a buon fine;
-									\item se il risultato è pari al 100\%, tutti i test realizzati per il software sono andati a buon fine;
-									\item se il risultato è compreso tra 0\% e 100\%, non tutti i test realizzati per il software sono andati a buon fine.
-								\end{itemize}
-						\end{itemize}
-					\item\textbf{QM-TS-VRF04 Bug-fixing percentage (BFP)}
-						\begin{itemize}
-							\item\textbf{Descrizione}: la metrica BFP si utilizza per misurare il quantitativo di errori corretti nel codice, rispetto agli errori trovati, fino alla data corrente;
-							\item\textbf{Unità di misura}: percentuale
-							\item\textbf{Formula}: 
-								\[ BFP = \frac{\mathit{Numero\;di\;difetti\;corretti}}{\mathit{Numero\;di\;difetti\;trovati}} \times 100 \]
-							\item\textbf{Risultato}
-								\begin{itemize}
-									\item se il risultato è pari a 0\%, nessun difetto è stato risolto;
-									\item se il risultato è pari al 100\%, tutti i difetti sono stati risolti;
-									\item se il risultato è compreso tra 0\% e 100\%, non tutti i difetti sono stati corretti.
-								\end{itemize}
-						\end{itemize}
-					\item\textbf{QM-TS-VRF05 Complessità media dei test di classe (CMTC)}
-						\begin{itemize}
-							\item\textbf{Descrizione}: la metrica CMTC viene utilizzata per comprendere il quantitativo medio di test realizzati in relazione al numero di classi presenti nel componente software;
-							\item\textbf{Unità di misura}: percentuale
-							\item\textbf{Formula}: 
-								\[ CMTC = \frac{\mathit{numero\;totale\;di\;test}}{\mathit{numero\;totali\;di\;classi}} \times 100\]
-							\item\textbf{Risultato}
-								\begin{itemize}
-									\item se il risultato è pari a 0\%, allora nel componente non è stato incluso in alcun test;
-									\item se il risultato è maggiore di 0\% e minore di 100\%, allora in media ci possono essere delle classi prive di test;
-									\item se il risultato è maggiore di 100\%, allora in media ciascuna classe ha almeno un test.
-								\end{itemize}
-						\end{itemize}
-				\end{itemize}
-\fi
+			Nella sezione verranno inserite a tempo debito le metriche selezionate dal gruppo per misurare il raggiungimento degli obiettivi di qualità del processo di Verifica.
+
 	\subsection{Validazione}
 		\subsubsection{Introduzione processo}
 			\paragraph{Descrizione}

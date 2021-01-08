@@ -149,13 +149,40 @@
 							\item\textbf{Utente}: persona che ha effettuato il login.
 						\end{itemize}
 					\item\textbf{Scopo e descrizione}: riporta una breve descrizione del caso d’uso;
-					\item\textbf{Pre-condizione}: specifica le condizioni in cui versa il sistema prima del verificarsi degli eventi del caso d’uso;
-					\item\textbf{Post-condizione}: specifica le condizioni in cui versa il sistema dopo il verificarsi degli eventi del caso d’uso;
-					\item\textbf{Scenario principale}: rappresentazione attraverso elenco numerato del flusso degli eventi;
+					\item\textbf{Precondizione}: specifica le condizioni in cui versa il sistema prima del verificarsi degli eventi del caso d’uso;
+					\item\textbf{Flusso principale degli eventi}: rappresentazione attraverso elenco numerato del flusso degli eventi;
+					\item\textbf{Scenari alternativi}: opzionale, rappresentazione attraverso elenco di tutte le azioni che possono manifestarsi durante l’esecuzione di un caso d’uso al verificarsi di un evento imprevisto che causa una deviazione dal flusso principale;
+					\item\textbf{Postcondizione}: specifica le condizioni in cui versa il sistema dopo il verificarsi degli eventi del caso d’uso;
 					\item\textbf{Estensioni}: opzionali, impiegati per modellare scenari alternativi. Al verificarsi di una determinata condizione il caso d’uso ad essa collegata viene interrotto;
 					\item\textbf{Inclusioni}: opzionali, usati quando due casi d’uso sono tra loro collegati. Il secondo è incondizionatamente incluso nel primo;
 					\item\textbf{Generalizzazione}: opzionali, rappresentano specializzazioni di un caso d’uso.
 				\end{itemize}
+			\paragraf{Esempio di caso d’uso}
+				Di seguito viene riportato un esempio di diagramma di caso d’uso e le informazioni ad esso associate:
+					\begin{figure}[H]
+    						\centering
+    						\includegraphics[width=1.0\textwidth]{res/images/esempio_caso_d_uso.png}
+						\caption{Img.1 esempio_caso_d_uso}
+						\label{fig:Img.1 esempio_caso_d_uso: UC2 Registrazione}
+					\end{figure}
+				\begin{itemize}
+					\item\textbf{Attori}: Utente non autenticato;
+					\item\textbf{Scopo e descrizione}: L’utente desidera registrarsi con un nuovo account inserendo dei dati personali;
+					\item\textbf{Precondizione}: L’applicazione è stata avviata;
+					\item\textbf{Flusso principale degli eventi}
+						\begin{enumerate}
+							\item Inserimento nome utente (UC2.1)
+							\item Inserimento email (UC2.2)
+							\item Inserimento password (UC2.3)
+							\item Conferma registrazione (UC2.4)
+						\end{enumerate}
+					\item\textbf{Scenari alternativi}
+						\begin{itemize}
+							\item Se l’utente ha inserito dei dati non validi il sistema interrompe la fase di registrazione e mostra un errore (UC11 Visualizzazione errore di registrazione).
+						\end{itemize}
+					\item\textbf{Postcondizione}: L’utente inserendo e confermando i dati richiesti ha creato un nuovo account.
+				\end{itemize}
+			
 
 		\subsubsection{Progettazione}
 			\paragraph{Introduzione}
