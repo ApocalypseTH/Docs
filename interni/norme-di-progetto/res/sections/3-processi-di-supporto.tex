@@ -11,7 +11,7 @@
 				Per ogni processo mirato alla qualità si definiscono delle metriche che vengono riportate in ciascuna sezione del presente documento. Nello specifico la descrizione di una norma in questo documento si compone dei seguenti attributi:
 				\begin{itemize}
 					\item\textbf{Descrizione}: descrive il valore e l’utilizzo della metrica
-					\item\textbf{Unità di misura}
+					\item\textbf{Unità di misura}: unità di misura della metrica;
 					\item\textbf{Fonte}: (omissibile) Da dove è possibile ricavare un dato associato alla specifica metrica	
 					\item\textbf{Formula}: (omissibile) indica come si può ricavare il dato associato alla specifica metrica, secondo una formula indiretta.
 					\item\textbf{Risultato}: (omissibile) permette di avere un’interpretazione univoca del valore di un dato associato alla specifica metrica.
@@ -113,13 +113,13 @@
 					\hline
 					Studio di Fattibilità & Analisi critica di tutti i capitolati a disposizione, con valutazione degli aspetti positivi e negativi di ognuno. Contenente anche l’indicazione del capitolato eletto dal gruppo. & Si & Interno \\
 					\hline
-					Piano di Progetto & Espone la pianificazione di tutte le attività di progetto previste dal gruppo EverBuilds, presentando una previsione dell’impegno orario dei singoli membri, un preventivo delle spese e tutti i consuntivi di periodo. & Si & Esterno \\
+					Piano di Progetto & Espone la pianificazione delle attività di progetto previste dal gruppo EverBuilds, presentando una previsione dell’impegno orario dei singoli membri, un preventivo delle spese e tutti i consuntivi di periodo. & Si & Esterno \\
 					\hline
-					Piano di Qualifica & Espone e descrive i criteri di valutazione della qualità adottati dal gruppo. \newline Descrizione delle criticità, e dei miglioramenti futuri come contromisure & Si & Esterno \\
+					Piano di Qualifica & Espone e descrive i criteri di valutazione della qualità adottati dal gruppo, oltre che a stilare l’insieme delle criticità a cui potremmo essere esposti e quali contromisure adottare. \newline Descrizione delle criticità, e dei miglioramenti futuri come contromisure & Si & Esterno \\
 					\hline
 					Analisi dei Requisiti & Presenta tutti i requisiti e le caratteristiche che il prodotto finale dovrà avere, riportando i casi d’uso e il tracciamento dei requisiti del prodotto e dei processi. & Si & Esterno \\
 					\hline
-					Verbali & I verbali interni sono resoconti sintetici degli incontri del team; conterranno un ordine del giorno, gli argomenti affrontati e le decisioni prese. \newline I verbali esterni riportano i resoconti degli incontri del gruppo coi committenti e/o col proponente. & Si & Esterno \& Interno  \\
+					Verbali & I Verbali Interni sono resoconti sintetici degli incontri del team; conterranno un ordine del giorno, gli argomenti affrontati e le decisioni prese. I Verbali Esterni riportano i resoconti degli incontri del gruppo coi committenti e/o col proponente. \newline I verbali esterni riportano i resoconti degli incontri del gruppo coi committenti e/o col proponente. & Si & Esterno \& Interno  \\
 					\hline
 				\end{longtable}
 			\end{center}
@@ -214,8 +214,8 @@
 					\end{itemize}
 			\paragraph{Struttura documenti specializzati}
 				\subparagraph{Struttura Verbale}
-					Ai verbali, sia interni che esterni, si applicano le medesime norme strutturali degli altri documenti esposte nella sezione 000. \\
-					I verbali aggiungono rispetto agli altri documenti i seguenti elementi strutturali:
+					Ai Verbali, sia interni che esterni, si applicano le medesime norme strutturali degli altri documenti esposte nella sezione 000. \\
+					I Verbali aggiungono rispetto agli altri documenti i seguenti elementi strutturali:
 					\begin{itemize}
 						\item\textbf{Informazioni Generali}, composto dalle seguenti informazioni:
 							\begin{itemize}
@@ -242,7 +242,7 @@
 						\item Un termine inizialmente può non contenere definizione. Tale modalità è da preferirsi al rimandare l’inserimento del termine nel glossario.
 					\end{itemize}
 				\subparagraph{Struttura Studio di Fattibilità}
-					Al glossario si applicano le medesime norme strutturali degli altri documenti esposte alla sezione 000. \\
+					Allo Studio di Fattibilità si applicano le medesime norme strutturali degli altri documenti esposte alla sezione 000. \\
 					I capitoli del corpo del documento espongono ciascuno uno dei capitolati proposti dal committente. I redattori, nell’esposizione di ciascun capitolato, devono compilare in modo esaustivo la lista di punti seguente: 
 					\begin{itemize}
 						\item\textbf{Informazioni Generali}, composto dalle seguenti informazioni:
@@ -258,7 +258,7 @@
 						\item\textbf{criticità e fattori di rischio;}
 						\item\textbf{conclusioni.}
 					\end{itemize}
-					Per un maggiore dettaglio vedi sezione §2.2.2.
+					Per un maggiore dettaglio vedi sezione 000.
 		\subsubsection{Norme tipografiche}
 			\paragraph{Convenzioni di denominazione}
 				I nomi dei file e delle directory, escludendo l’estensione del file utilizzano le seguenti convenzioni:\\
@@ -267,7 +267,7 @@
 					\item i nomi sono scritti interamente in minuscolo.
 				\end{itemize}
 				\subparagraph{Denominazione documenti formali}
-					La denominazione dei documenti formali seguirà lo schema:  \\
+					La denominazione dei documenti formali (a eccezione dei verbali) seguirà lo schema:  \\
 					\begin{center}
 						\textbf{<NomeDocumento>\_v<x>.<y>.<z>}
 					\end{center}
@@ -285,14 +285,14 @@
 					\begin{itemize}
 						\item\textbf{<NomeDocumento>}: corrisponde al nome ufficiale del documento.
 					\end{itemize}
-				\subparagraph{Denominazione verbali}
-					La denominazione dei verbali seguirà lo schema:  \\
+				\subparagraph{Denominazione Verbali}
+					La denominazione dei Verbali seguirà lo schema:  \\
 					\begin{center}
-						\textbf{verbale\_<tipo>\_<YYYY>-<MM>-<DD>}
+						\textbf{Verbale\_<tipo>\_<YYYY>-<MM>-<DD>}
 					\end{center}
 					dove: \\
 					\begin{itemize}
-						\item\textbf{<Tipo>}: corrisponde alla tipologia di verbale e può assumere valori possibili pari a: interno / esterno;
+						\item\textbf{<Tipo>}: corrisponde alla tipologia di Verbale e può assumere valori possibili pari a: interno / esterno;
 						\item\textbf{<YYYY>-<MM>-<DD> }: corrisponde alla data in cui è avvenuto l’incontro.
 					\end{itemize}
 			\paragraph{Stili di testo e Punteggiatura}
@@ -376,7 +376,7 @@
 						\item\textbf{QLT} ad indicare il processo di Gestione della Qualità.
 						\item\textbf{DCM} ad indicare il processo di Documentazione.
 						\item\textbf{CNF} ad indicare il processo di Gestione della Configurazione.
-						\item\textbf{CMB} ad indicare il processo di Gestione dei Cambiamenti.
+						\item\textbf{PRB} ad indicare il processo di Gestione dei Problemi Accidentali.
 						\item\textbf{VRF} ad indicare il processo di Verifica.
 						\item\textbf{VLD} ad indicare il processo di Validazione.
 						\item\textbf{CRD} ad indicare il processo di Coordinamento.
@@ -405,16 +405,16 @@
 				I formati delle immagini consentiti sono PDF e PNG. Tutte le immagini devono essere corredate da una breve didascalia che ne descriva il contenuto. Inoltre si deve fornire un numero progressivo ad ogni immagine nel documento per permetterne la tracciabilità. L’insieme di tutte le immagini presenti in un documento è riepilogato nella lista delle figure. \\
 				La didascalia dell’immagine deve avere il seguente formato:
 				\begin{center}
-					\textbf{Img\#<numero progressivo immagine> <Nome file immagine>: <Testo descrittivo>}
+					\textbf{Img.<numero progressivo immagine> <Nome file immagine>: <Testo descrittivo>}
 				\end{center}
-				(e.g.  Img\#3 vallata\_con\_albero.png: Una vallata con al centro un albero da frutto)
+				(e.g.  Img.3 vallata\_con\_albero.png: Una vallata con al centro un albero da frutto)
 			\paragraph{Tabelle}
 				Ogni tabella deve conformarsi rigidamente al template per la formattazione delle tabelle presente nel file: file 000. Ogni tabella deve essere corredata da una didascalia che ne esplicita lo scopo e il contenuto. Inoltre, deve essere provvista di numero progressivo. L’insieme di tutte le tabelle verrà indicato nella lista delle tabelle. \\
 				La didascalia della tabella deve avere il seguente formato: \\
 				\begin{center}
-					\textbf{Tab\#<numero progressivo tabella>: <Testo descrittivo>}
+					\textbf{Tab.<numero progressivo tabella>: <Testo descrittivo>}
 				\end{center}
-				(e.g. Tab\#5: la tabella mette in relazione i giorni della settimana con gli impegni dei componenti in ciascun giorno).
+				(e.g. Tab.5: la tabella mette in relazione i giorni della settimana con gli impegni dei componenti in ciascun giorno).
 % rimosso per RR %
 \iffalse
 			\paragraph{Grafici UML}
@@ -457,8 +457,7 @@
 		\subsubsection{Strumenti}
 			\paragraph{LaTeX}
 				Per la stesura dei documenti si è scelto di utilizzare il linguaggio di markup LaTeX. Il motivo principale che ha portato a questa scelta è la facilità di separazione tra contenuto e formattazione oltre che a consentire uno sviluppo orientato alla modularità, alla collaborazione e alla scalabilità.\\
-				Con LaTeX è possibile definire l’aspetto delle pagine in un file template condiviso da tutti i documenti. TEXstudio versione 2.6.6 viene utilizzato come editor di testo LaTeX.  \\
-				La compilazione in formato “.pdf” avviene per mezzo di PdfLatex e deve seguire le regole riportate alla sezione 000 di questo documento.
+				Come editor di testo il gruppo può scegliere di usare TEXstudio se si trova in un ambiente Windows oppure TEXShop se si trova in ambiente LINUX.  \\
 			\paragraph{Google drive e Google Docs}
 				Come citato al paragrafo 000, i redattori scelgono di adottare la tecnologia di scrittura di documenti testuali: Google Docs per redigere le prime bozze della documentazione a loro assegnata utilizzando il servizio web per la memorizzazione e sincronizzazione: Google Drive. \\
 				La scelta si basa sulla facilità di utilizzo propria di questa tecnologia, su un sistema efficace per commentare il testo e sulla velocità di sincronizzazione del lavoro dei redattori che lavorano in parallelo, grazie all’utilizzo dell’ambiente di cloud computing: Google Drive. \\
@@ -466,6 +465,8 @@
 				Il software StarUML verrà adottato per la produzione di diagrammi di attività e diagrammi di casi d’uso necessarie per descrivere rispettivamente: parte delle attività riportate durante il processo Documentazione e i requisiti del prodotto analizzati nel documento “Analisi dei Requisiti”.
 			\paragraph{Microsoft Excel}
 				Utilizziamo il software della suite Microsoft Office per realizzare fogli elettronici. I fogli elettronici così creati ci serviranno per svolgere calcoli, produrre diagrammi, istogrammi e aerogrammi, creare tabelle e grafici.
+			\paragraph{Google Sheet}
+				Utilizziamo il software Google Sheet per realizzare i grafici necessari per rappresentare insiemi di dati a una o più dimensioni da inserire nella documentazione. La scelta si fonda anche sulla semplicità di fruibilità del software, data dall’accentramento di molteplici attività svolte all’interno dell’ambiente Google Drive.
 
 	\subsection{Gestione della configurazione}
 		\subsubsection{Introduzione processo}
@@ -487,26 +488,25 @@
 					\item\textbf{<X>} rappresenta la versione stabile del documento rilasciata al pubblico, approvata dal Responsabile di Progetto, che autorizza l’incremento del numero della versione. La numerazione inizia da 0;
 					\item\textbf{<Y>} rappresenta una versione parzialmente stabile del documento, soggetta a verifica e approvazione da parte del Verificatore. Concettualmente potrebbe essere confrontato alla funzione dei test di integrazione nel software. La numerazione inizia da 0, viene incrementata dal Verificatore a ogni verifica, e riparte da questo valore ad ogni incremento di X;
 					\item\textbf{<Z>} rappresenta una versione instabile del documento in quanto è in fase di elaborazione da parte dei redattori. Concettualmente potrebbe essere confrontato alla funzione dei test di unità nel software. La numerazione inizia da 0, viene incrementata dai redattori a ogni modifica, e riparte da questo valore ad ogni incremento di X o Y.
-					\item\textbf{<cifreAggiuntive} sono cifre separate da un punto ‘ . ‘ servono ad identificare delle sotto attività che sono state svolte per completare una fase di elaborazione da parte dei redattori/programmatori.
+					\item\textbf{<cifreAggiuntive>} sono cifre separate da un punto ‘ . ‘ servono ad identificare delle sotto attività che sono state svolte per completare una fase di elaborazione da parte dei redattori/programmatori.
 				\end{itemize}
-			\paragraph{Tecnologie adottate}
+			\paragraph{Scelta del sistema di versionamento}
 				Per le parti del progetto da versionare si è scelto di usare il sistema di versionamento distribuito da Git, usando la repository di GitHub per ospitare la repository remota.
 			\paragraph{Repository}
-				Il gruppo EverBuilds ha deciso di creare due repository per il progetto:
+				Il gruppo EverBuilds ha deciso di spartire la mole di informazioni richiesta in più repository:
 				\begin{itemize}
-					\item per il versionamento dei documenti redatti \url{https://github.com/everbuilds/Docs} ;
+					\item una per il versionamento dei documenti redatti \url{https://github.com/everbuilds/Docs} ;
+					\item per il versionamento del codice prodotto si farà affidamento su specifici repository git, al momento non specifichiamo il loro nominativo perché non sono stati ancora creati
 				\end{itemize}
-		%-- repo per prodotto in RR ? -- %
-				Si è deciso di separare il codice dai documenti tenendo distinte le sezioni che riguardano \\
-				la parte di implementazione da quelle che raccolgono la documentazione ad essa relativa.\\
+				Si è deciso di separare il codice dai documenti tenendo distinte le sezioni che riguardano la parte di implementazione da quelle che raccolgono la documentazione ad essa relativa.\\
 			\paragraph{Struttura del repository}
 				% Entrambi i tipi di repository sono organizzati in cartelle:
 				\begin{itemize}
 					\item\textbf{Documentazione}:
 						\begin{itemize}
 							\item\textbf{Template}: cartella contenente i file di template in linguaggio LATEX, usati per assemblare tutti i documenti. 
-							\item\textbf{Esterni}: cartella contenente i documenti che saranno poi resi disponibili ai committenti e al proponente quali Analisi dei requisiti, Piano di Progetto, Piano di qualifica, Verbali esterni, Glossario, Lettera di presentazione;
-							\item\textbf{Interni}: cartella contenente i documenti privati necessari al gruppo come Norme di Progetto, Studio di fattibilità e Verbali interni.
+							\item\textbf{Esterni}: cartella contenente i documenti che saranno poi resi disponibili ai committenti e al proponente quali Analisi dei Requisiti, Piano di Progetto, Piano di Qualifica, Verbali esterni, Glossario, Lettera di presentazione;
+							\item\textbf{Interni}: cartella contenente i documenti privati necessari al gruppo come Norme di Progetto, Studio di Fattibilità e Verbali interni.
 							
 						\end{itemize}
 					% \item\textbf{Documentazione}: % altro da mettere più avanti
@@ -515,9 +515,8 @@
 			\paragraph{Tipi di file}
 				I file utilizzati per la documentazione del progetto sono:
 				\begin{itemize}
-					\item file con estensione .tex di LATEX;
-					%-- PDF ??? 
-					\item immagini e file testuali da inserire nei documenti.
+					\item file con estensione ".tex" di LATEX;
+					\item immagini con estensione ".png" o ".jpeg" da inserire nei documenti.
 				\end{itemize}
 				Il file .gitignore contiene un riferimento a tutti i file non versionati. Tale file è situato nel livello più esterno del repository.
 			\paragraph{Comandi di GitHub}
@@ -526,7 +525,7 @@
 					\item\textbf{master}: su cui vengono riportati i documenti nella loro versione definitiva approvata dal Responsabile di Progetto e pronta per la consegna ai destinatari;
 					\item\textbf{develop}: ramo di sviluppo in cui vengono riportati incrementalmente le modifiche apportate ai documenti e il codice, modifiche che devono essere verificate e  approvate dal Responsabile di Progetto.
 					\item\textbf{verifica/<numero>}: dove \textbf{<numero>} è un numero progressivo all’interno dell’insieme di tutti i branch di verifica. Questo tipo di branch consente al Verificatore di condurre la sua attività di verifica descritta alla sezione 000.
-					\item\textbf{feature/<titoloIdentificativo>}: dove \textbf{<titoloIdentificativo>} è un titolo composto da parole con iniziali minuscole separate dall’underscore ‘\_’ il titolo deve essere più descrittivo possibile per identificare il soggetto del branch cioè la feature da implementare.
+					\item\textbf{feature/<titoloIdentificativo>}: dove \textbf{<titoloIdentificativo>} è un titolo composto da parole con iniziali minuscole separate dal trattino ‘-’. Il titolo deve essere più descrittivo possibile per identificare il soggetto del branch cioè la feature da implementare.
 				\end{itemize}
 				Questa divisione è orientata ad uno sviluppo per feature, per cui, per lavorare alla stesura di un documento nel proprio repository locale, ogni membro del gruppo deve:
 				\begin{enumerate}

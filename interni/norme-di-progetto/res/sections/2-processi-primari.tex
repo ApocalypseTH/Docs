@@ -47,7 +47,6 @@
 							\item\textbf{qualità di processo}: vengono identificati dei processi dagli standard, stabiliti degli obiettivi, escogitate delle strategie per attuarli e individuate le metriche per misurarli e controllarli;
 							\item\textbf{qualità di prodotto}: vengono identificati gli attributi più rilevanti per il prodotto, definiti degli obiettivi per raggiungerli e delle metriche per misurarli;
 							\item\textbf{specifiche dei test}: definiscono una serie di test attraverso i quali il prodotto passa per garantire che soddisfi i requisiti;
-							\item\textbf{standard di qualità}: vengono esposti gli standard di qualità scelti;
 							\item\textbf{valutazioni per il miglioramento}: vengono riportati i problemi e le relative soluzioni nel ricoprire un determinato ruolo e nell'uso degli strumenti scelti;
 							\item\textbf{resoconto delle attività di verifica}: per ogni attività si riportano i risultati delle metriche calcolate in forma di resoconto.
 						\end{itemize}
@@ -117,16 +116,16 @@
 						dove:
 						\begin{itemize}
 							\item\textbf{<CodiceBase>}: funge da identificatore del caso d’uso generico;
-							\item\textbf{<CodiceSottocaso>}: codice progressivo opzionale che identifica gli eventuali sottocasi. Può a sua volta includere altri livelli.
+							\item\textbf{.<CodiceSottocaso>}: codice progressivo opzionale che identifica gli eventuali sottocasi preceduto da un punto. Può a sua volta includere altri livelli.
 						\end{itemize}
 				\end{itemize}
 				Il Codice stabilito secondo la convenzione sopra citata, una volta associato ad un requisito, non potrà cambiare nel tempo. \\
 				Ogni requisito sarà accompagnato da una serie di informazioni aggiuntive:\\
 				\begin{itemize}
-					\item\textbf{Classificazione}: indica l’importanza del requisito, sebbene possa risultare ridondante ne facilita la lettura;
 					\item\textbf{Descrizione}: descrizione breve, completa e il meno ambigua possibile dello scopo del requisito;
 					\item\textbf{Fonti}: indica il luogo da dove deriva il requisito, individuato tra: Capitolato d’Appalto, Verbali Interni, Verbali Esterni e Casi d’uso.
 				\end{itemize}
+				La struttura da usare sarà:\\
 				%-- manca la tabella --%
 			\paragraph{Classificazione Casi d’uso}
 				Il codice di ogni caso d'uso seguirà questo formalismo:
@@ -146,7 +145,8 @@
 						Possono essere individuate due tipologie di attori:
 						\begin{itemize}
 							\item\textbf{Utente non autenticato}: persona esterna che non ha effettuato il login per l’autenticazione ma che interagisce con il sistema;
-							\item\textbf{Utente autenticato}: persona che ha effettuato il login;
+							\item\textbf{Utente autenticato}: persona esterna che ha effettuato il login;
+							\item\textbf{Utente}: persona che ha effettuato il login.
 						\end{itemize}
 					\item\textbf{Scopo e descrizione}: riporta una breve descrizione del caso d’uso;
 					\item\textbf{Pre-condizione}: specifica le condizioni in cui versa il sistema prima del verificarsi degli eventi del caso d’uso;
@@ -156,9 +156,7 @@
 					\item\textbf{Inclusioni}: opzionali, usati quando due casi d’uso sono tra loro collegati. Il secondo è incondizionatamente incluso nel primo;
 					\item\textbf{Generalizzazione}: opzionali, rappresentano specializzazioni di un caso d’uso.
 				\end{itemize}
-				
-		% rimosso per RR %
-\iffalse
+
 		\subsubsection{Progettazione}
 			\paragraph{Introduzione}
 				\subparagraph{Descrizione}
@@ -174,43 +172,14 @@
 					L'architettura dovrà soddisfare i requisiti indicati nel documento “Analisi dei Requisiti”, adattandosi nel caso si evolvano o se ne aggiungano di nuovi. \\
 					Deve rispettare le caratteristiche di comprensibilità, modularità e robustezza per garantire una riusabilità, ovvero un impiego delle sue parti anche in altre applicazioni. \\
 					Inoltre si devono presentare componenti semplici, incapsulate, con un basso livello di accoppiamento e coese nel raggiungimento degli obiettivi per far sì che si abbia un impiego efficiente delle risorse necessarie.\\
-			\paragraph{Design Patterns}
-				Al termine dell’attività di Analisi dei requisiti è compito dei Progettisti adottare opportune soluzioni progettuali a problemi ricorrenti. Queste soluzioni sono denominate con il termine Design Patterns e si distinguono per flessibilità e capacità di garantire libertà d’uso ai Programmatori. Ogni Design Pattern deve essere accompagnato da una descrizione ed un diagramma, che ne esponga il significato e la struttura;\\
-			\paragraph{Diagrammi UML 2.0}
-				Per rendere maggiormente chiare le scelte progettuali adottate si predispone l’utilizzo di diagrammi UML 2.0. Sono previsti:\\
-				\begin{itemize}
-					\item\textbf{Diagrammi delle attività}: descrittivi del flusso di operazioni di un’attività;
-					\item\textbf{Diagrammi delle classi}: illustrativi di metodi e attributi di classi e tipi;
-					\item\textbf{Diagrammi di sequenza}: illustrativi di sequenze di azioni attraverso l’impiego di scelte definite.
-				\end{itemize}
-			\paragraph{Tracciamento componenti - Requisiti}
-				Ogni requisito dell’Analisi dei requisiti deve riferirsi al componente che lo soddisfa.\\
+					
 		\subsubsection{Codifica}
 			\paragraph{Introduzione}
 				\subparagraph{Descrizione}
 					La scrittura del codice dovrà rispettare quanto stabilito nella documentazione di prodotto. Dovrà perseguire gli obiettivi di qualità definiti all'interno del documento “Piano di Qualifica” per poter garantire una buona qualità del codice.\\
 				\subparagraph{Obbiettivi}
 					La codifica, svolta dal ruolo del Programmatore, ha come scopo quello di normare l’effettiva realizzazione del prodotto software richiesto, in modo che sia conforme alle richieste pressate con il Proponente. In questa fase si concretizza la soluzione trasformando in codice l’architettura ad alto livello pensata dai Progettisti rendendola eseguibile dai calcolatori.\\
-					I Programmatori dovranno seguire queste norme durante le fasi di programmazione ed implementazione così da generare codice leggibile ed uniforme, agevolare le fasi di manutenzione, verifica e validazione e migliorare la qualità di prodotto.\\
-			\paragraph{Stile di codifica}
-				Al fine di ottenere uniformità nel codice del progetto, ciascun membro del gruppo è tenuto a rispettare le seguenti norme:\\
-				\begin{itemize}
-					\item\textbf{Indentazione}: i blocchi innestati devono essere correttamente indentati, usando per ciascun livello quattro spazi (ad eccezione dei commenti). Per garantire il rispetto di tale regola viene consigliato di configurare adeguatamente il proprio editor o IDE;
-					\item\textbf{Parentesi}: inserire le parentesi di delimitazione dei costrutti in linea e non al di sotto di essi;
-					\item\textbf{Struttura dei metodi}: è desiderabile, se possibile, definire metodi con le seguenti caratteristiche:
-						\begin{itemize}
-							\item prima lettera del nome minuscola. Nel caso il nome sia composto da più parole, quelle successive devono iniziare con la lettera maiuscola;
-							\item utilizzare metodi brevi (con poche righe di codice) dove ciascuna riga corrisponde a una singola istruzione;
-						\end{itemize}
-					\item\textbf{Univocità dei nomi}: classi, metodi, variabili devono avere un nome univoco ed esplicito per evitare ambiguità e incomprensioni;
-					\item\textbf{Classi}: i nomi delle classi devono iniziare sempre con una lettera maiuscola;
-					\item\textbf{Costanti}: i nomi delle costanti devono essere scritte usando solo maiuscole;
-					\item\textbf{Metodi}: i nomi dei metodi devono iniziare con una lettera minuscola. Nel caso siano composti da più parole, quelle successive devono iniziare con una lettera maiuscola;
-					\item\textbf{Lingua}: il codice, come anche i commenti, deve essere scritto in lingua inglese.			
-				\end{itemize}
-				\textbf{Ricorsione}: Il suo utilizzo va evitato quanto più possibile in quanto potrebbe indurre ad una maggiore occupazione di memoria rispetto a soluzioni iterative.		
-\fi
-	% fine rimossione %
+					I Programmatori dovranno seguire queste norme durante le fasi di programmazione ed implementazione così da generare codice leggibile ed uniforme, agevolare le fasi di manutenzione, verifica e validazione e migliorare la qualità di prodotto.\\	
 
 		\subsubsection{Metriche}
 			La presente sezione espone le metriche selezionate dal gruppo per misurare il raggiungimento degli obiettivi di qualità del processo di Sviluppo. \\
