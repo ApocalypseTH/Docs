@@ -10,10 +10,10 @@
 				\end{itemize}
 				Per ogni processo mirato alla qualità si definiscono delle metriche che vengono riportate in ciascuna sezione del presente documento. Nello specifico la descrizione di una norma in questo documento si compone dei seguenti attributi:
 				\begin{itemize}
-					\item\textbf{Descrizione}: descrive il valore e l’utilizzo della metrica
+					\item\textbf{Descrizione}: descrive il valore e l’utilizzo della metrica;
 					\item\textbf{Unità di misura}: unità di misura della metrica;
-					\item\textbf{Fonte}: (omissibile) Da dove è possibile ricavare un dato associato alla specifica metrica	
-					\item\textbf{Formula}: (omissibile) indica come si può ricavare il dato associato alla specifica metrica, secondo una formula indiretta.
+					\item\textbf{Fonte}: (omissibile) Da dove è possibile ricavare un dato associato alla specifica metrica;	
+					\item\textbf{Formula}: (omissibile) indica come si può ricavare il dato associato alla specifica metrica, secondo una formula indiretta;
 					\item\textbf{Risultato}: (omissibile) permette di avere un’interpretazione univoca del valore di un dato associato alla specifica metrica.
 				\end{itemize}
 			\paragraph{Obbiettivi}
@@ -40,8 +40,8 @@
 			\end{center}
 			dove:
 			\begin{itemize}
-				\item\textbf{<soggettoMetrica>}: può assumere i valori: PD, PC e TS dove PD indica che la caratteristica è associata al prodotto,  PC la caratteristica associata a un processo e TS ad un test del prodotto.
-				\item\textbf{<siglaProcessoInteressato>}: può assumere il valore di una delle sigle di processo riportate alla sezione §3.2.6.5.2, essa indica il processo soggetto della caratteristica oppure il processo che si fa carico di gestire la specifica caratteristica del prodotto.
+				\item\textbf{<soggettoMetrica>}: può assumere i valori: PD, PC e TS dove PD indica che la caratteristica è associata al prodotto,  PC la caratteristica associata a un processo e TS ad un test del prodotto;
+				\item\textbf{<siglaProcessoInteressato>}: può assumere il valore di una delle sigle di processo riportate alla sezione §3.2.6.5.2, essa indica il processo soggetto della caratteristica oppure il processo che si fa carico di gestire la specifica caratteristica del prodotto;
 				\item\textbf{<numeroProgressivo>}: è un numero progressivo all’interno della sotto lista identificata dai primi 3 attributi, necessariamente di 2 cifre.
 			\end{itemize}
 			Un esempio facilmente reperibile di descrizione di una norma si trova nella sezione seguente.
@@ -51,13 +51,13 @@
 				\item\textbf{QM-PC-QLT01 Percentuale delle metriche soddisfatte (PMS)}
 					\begin{itemize}
 						\item\textbf{Descrizione}: la metrica permette di conoscere la percentuale dei requisiti di qualità soddisfatti fino a quel momento, sulla base delle requisiti di qualità disponibili e espressi secondo metriche da noi definite;
-						\item\textbf{Unità di misura}: percentuale
+						\item\textbf{Unità di misura}: percentuale;
 						\item\textbf{Formula}: \\
 							\[PMS = \frac{\mathit{Numero\;di metriche\;soddisfatte}}{\mathit{Numero\;totale\;di\;operandi}} \times 100\]
 						\item\textbf{Risultati}: 
 							\begin{itemize}
-								\item se il risultato è pari a 0\%, nessuna metrica è stata superata
-								\item se il risultato è pari al 100\%, tutte le metriche sono state superate.
+								\item se il risultato è pari a 0\%, nessuna metrica è stata superata;
+								\item se il risultato è pari al 100\%, tutte le metriche sono state superate;
 								\item se il risultato è maggiore di 0\%, ma minore di 100\%, non tutte le metriche hanno raggiunto la soglia di accettabilità.
 							\end{itemize}
 					\end{itemize}
@@ -126,7 +126,7 @@
 		\subsubsection{Ciclo di vita della documentazione formale}
 			Può essere necessario produrre più versioni per uno stesso documento formale, questo per garantire un processo incrementale che li porterà a soddisfare in economicità i soli requisiti a cui devono adempiere in una specifica fase del progetto.\\
 			Per questa ragione il documento può richiedere molteplici approvazioni nel suo ciclo di vita.\\
-			Ogni azione che porta il documento a transitare da uno stadio ad un altro esposti nel diagramma successivo deve comportare una modifica del suo codice di versione, modifica che deve rispettare le norme esposte al paragrafo §3.2.4.2.\\
+			Ogni azione che porta il documento a transitare da uno stadio ad un altro esposti nel diagramma successivo deve comportare una modifica del suo codice di versione, modifica che deve rispettare le norme esposte al paragrafo §3.2.4.2 .\\
 			\begin{figure}[H]
     				\centering
     				\includegraphics[width=1.0\textwidth]{res/images/ciclo_di_vita.png}
@@ -138,19 +138,19 @@
 				\begin{itemize}
 					\item\textbf{Ideazione}:  La decisione di redigere lo specifico documento è stata confermata dal gruppo, vengono assegnati i ticket necessari per le varie fasi del suo ciclo di vita ai ruoli interessati;
 					\item\textbf{Creazione}: il documento viene creato partendo da un template progettato per tale scopo situato nella cartella Template del repository remoto (vedi sezione §3.2.5.1). Alla prima creazione vengono inoltre inizializzati il registro delle modifiche e l’indice dei contenuti sulla base di tutte le informazioni disponibili in quel momento;
-					\item\textbf{Stesura}: I membri del gruppo redigono il documento adottando un metodo incrementale: I membri devono essere predisposti ad accettare e risolvere a passi incrementali le correzioni proposte da coloro che effettuano la revisione.
+					\item\textbf{Stesura}: I membri del gruppo redigono il documento adottando un metodo incrementale: I membri devono essere predisposti ad accettare e risolvere a passi incrementali le correzioni proposte da coloro che effettuano la revisione;
 					\item\textbf{Revisione}ogni sezione del corpo del documento viene regolarmente rivista da almeno un membro del gruppo, che deve essere obbligatoriamente diverso dal redattore della parte in verifica;
 					\item\textbf{Approvazione}: terminata la revisione, il Responsabile del Progetto stabilisce la validità del documento, che solo a questo punto può essere considerato completo e può essere rilasciato.
 				\end{itemize}
 			\paragraph{Avanzamento di versione}
 				Ogni volta che si effettueranno delle modifiche nel documento, queste verranno registrate in un apposito registro e classificate con un specifico codice. Questo varrà anche per il passaggio del documento da essere informale a diventare formale e definitivo.
-				Per maggiori dettagli vedi sezione §3.3.2.1.
+				Per maggiori dettagli vedi sezione §3.3.2.1 .
 
 
 		\subsubsection{Struttura Documenti}
 			\paragraph{Template utilizzati }
 				Il gruppo ha deciso di adottare il linguaggio LATEX per la stesura dei documenti. \\
-				Ogni documento dovrà essere realizzato a partire da un template LATEX appropriato reperibile al percorso 000, la scelta del template da utilizzare si basa sulla classificazione dei tipi di documenti esposta alla sezione §3.2.2 .\\
+				Ogni documento dovrà essere realizzato a partire da un template LATEX appropriato. La scelta del template da utilizzare si basa sulla classificazione dei tipi di documenti esposta alla sezione §3.2.2 .\\
 				I template e gli script associati vanno utilizzati con lo scopo di semplificare, uniformare e automatizzare il più possibile la procedura di adeguamento alle norme per la redazione del documento.\\
 			\paragraph{Struttura documento generico}
 				\subparagraph{Frontespizio}
@@ -177,7 +177,7 @@
 									\end{itemize}
 								\item\textbf{Redattori}: indica i membri di EverBuilds che si sono occupati della stesura del documento;
 								\item\textbf{Verificatori}: indica i membri di EverBuilds che si sono occupati della verifica del documento;
-								\item\textbf{Approvazione}: indica il nome dell’ultimo Responsabile di Progetto che ha approvato il documento.
+								\item\textbf{Approvazione}: indica il nome dell’ultimo Responsabile di Progetto che ha approvato il documento;
 							\end{itemize}
 						\item\textbf{Sommario}: (opzionale) posto in fondo alla pagina, contiene una breve descrizione del contenuto del documento.
 					\end{itemize}
@@ -223,7 +223,7 @@
 								\item Data: Data dell’incontro;
 								\item Ora Inizio: Ora di inizio dell’incontro;
 								\item Ora Fine: Ora di fine dell’incontro;
-								\item Segretario: Il membro del gruppo che si è assunto il ruolo di segretario dell’incontro, cioè colui che ha il compito di redigere il documento.
+								\item Segretario: Il membro del gruppo che si è assunto il ruolo di segretario dell’incontro, cioè colui che ha il compito di redigere il documento;
 								\item Partecipanti: Elenco delle persone presenti all’incontro.
 							\end{itemize}
 						\item\textbf{Resoconto}: descrizione degli argomenti trattati durante l’incontro, comprese le considerazioni che sono state fatte a riguardo;
@@ -248,8 +248,8 @@
 						\item\textbf{Informazioni Generali}, composto dalle seguenti informazioni:
 							\begin{itemize}
 								\item nome del capitolato;
-								\item proponente
-								\item committente
+								\item proponente;
+								\item committente;
 							\end{itemize}
 						\item\textbf{descrizione del capitolato;}
 						\item\textbf{finalità del progetto;}
@@ -315,7 +315,7 @@
 					\item\textbf{Punteggiatura}: deve essere utilizzata in modo attento per raggruppare parti di frase dal senso coeso e coerente. L’utilizzo del punto è richiesto per terminare un concetto e passare alla discussione di un altro argomento affine;
 					\item\textbf{Spazi}: nessun segno di punteggiatura verrà anticipato da spazi, a meno delle parentesi aperte;
 					\item\textbf{Parentesi tonde}: si utilizzano per sottendere una porzione di testo che se venisse rimossa il valore del paragrafo in cui si trova non verrebbe compromesso, esempi d’uso: per fornire un sinonimo del termine oppure un esempio;
-					\item\textbf{Parentesi angolari}: Vengono utilizzate con funzione di escape per inserire all’interno di un esempio di formato dei segnaposti (e.g. formato png: \textbf{<NomeImmagine>.png}).
+					\item\textbf{Parentesi angolari}: Vengono utilizzate con funzione di escape per inserire all’interno di un esempio di formato dei segnaposti (e.g. formato png: \textbf{<NomeImmagine>.png});
 					\item\textbf{Virgolette}: le doppie virgolette si impiegano per indicare che l’insieme delle parole che sottendono hanno un’espressività più precisa e rigida rispetto semplicemente a ciò che significano, (e.g. “.. ma per seguir virtute e canoscenza” in questo caso è la sequenza esatta dei caratteri a conferire il significato ricercato);
 					\item\textbf{Slash}: il simbolo ‘/’ si userà per indicare la disgiunzione esclusiva o la congiunzione tra due elementi testuali (e.g. inserire qui: testo/immagine ).
 				\end{itemize}
@@ -339,7 +339,7 @@
 						\begin{itemize}
 							\item\textbf{AAAA}: rappresenta l’anno. Per rappresentarlo si usano esattamente quattro cifre;
 							\item\textbf{MM}: rappresenta il mese. Per rappresentarlo si usano esattamente due cifre;
-							\item\textbf{GG}: rappresenta il giorno. Per rappresentarlo si usano esattamente due cifre.
+							\item\textbf{GG}: rappresenta il giorno. Per rappresentarlo si usano esattamente due cifre;
 						\end{itemize}
 					\item\textbf{Orari}:  se non specificato in modo diverso, devono essere espressi seguendo il formalismo dello standard [ISO 8601]:\\
 						\begin{center}
@@ -348,13 +348,13 @@
 						dove:\\
 						\begin{itemize}
 							\item\textbf{HH}: rappresenta il numero di ore trascorse dalla mezzanotte, Per la rappresentazione vengono usate esattamente due cifre;
-							\item\textbf{MM}: rappresenta i minuti. Per la rappresentazione vengono usate esattamente due cifre.
+							\item\textbf{MM}: rappresenta i minuti. Per la rappresentazione vengono usate esattamente due cifre;
 						\end{itemize}
 					\item\textbf{Nomi ricorrenti}\\
 						\begin{itemize}
-							\item\textbf{Ruoli di progetto}: i ruoli di progetto andranno formattati con la prima lettera di ogni parola maiuscola a eccezione delle preposizioni e rappresentati in corsivo.
-							\item\textbf{Nomi dei documenti e nomi di cartelle e file}: i vari nomi dei documenti andranno formattati con la prima lettera di ogni parola maiuscola a eccezione delle preposizioni, i nomi riportati di file e cartelle devono essere identici a i loro nomi effettivi case sensitive, i nomi di documenti file e cartelle sono rappresentati in corsivo e racchiusi tra doppie virgolette semplici. (e.g “Norme di Progetto”, “norme\_di\_progetto.tex”).
-							\item\textbf{Riferimenti}per fare riferimento ad una sezione che fa parte dello stesso documento si deve scrivere il codice che la identifica preceduto dal simbolo: § (e.g §3.2). \\
+							\item\textbf{Ruoli di progetto}: i ruoli di progetto andranno formattati con la prima lettera di ogni parola maiuscola a eccezione delle preposizioni e rappresentati in corsivo;
+							\item\textbf{Nomi dei documenti e nomi di cartelle e file}: i vari nomi dei documenti andranno formattati con la prima lettera di ogni parola maiuscola a eccezione delle preposizioni, i nomi riportati di file e cartelle devono essere identici a i loro nomi effettivi case sensitive, i nomi di documenti file e cartelle sono rappresentati in corsivo e racchiusi tra doppie virgolette semplici. (e.g “Norme di Progetto”, “norme\_di\_progetto.tex”);
+							\item\textbf{Riferimenti:} per fare riferimento ad una sezione che fa parte dello stesso documento si deve scrivere il codice che la identifica preceduto dal simbolo: § (e.g §3.2). \\
 								Per fare riferimento ad una sezione di un altro documento si riporta il nome del documento seguito da: § e il codice della sezione (e.g. “Norme di Progetto” §3.2).\\
 						\end{itemize}
 				\end{itemize}
@@ -367,19 +367,19 @@
 						\item\textbf{PQ} ad indicare il documento “Piano di Qualifica”;
 						\item\textbf{NP} ad indicare il documento “Norme di Progetto”;
 						\item\textbf{Gl} ad indicare il documento “Glossario”;
-						\item\textbf{ST} ad indicare il documento “Specifica Tecnica”
+						\item\textbf{ST} ad indicare il documento “Specifica Tecnica”.
 					\end{itemize}
 				\subparagraph{Processi}
 					\begin{itemize}
-						\item\textbf{FRN} ad indicare il processo di Fornitura.
-						\item\textbf{SVL} ad indicare il processo di Sviluppo.
-						\item\textbf{QLT} ad indicare il processo di Gestione della Qualità.
-						\item\textbf{DCM} ad indicare il processo di Documentazione.
-						\item\textbf{CNF} ad indicare il processo di Gestione della Configurazione.
-						\item\textbf{PRB} ad indicare il processo di Gestione dei Problemi Accidentali.
-						\item\textbf{VRF} ad indicare il processo di Verifica.
-						\item\textbf{VLD} ad indicare il processo di Validazione.
-						\item\textbf{CRD} ad indicare il processo di Coordinamento.
+						\item\textbf{FRN} ad indicare il processo di Fornitura;
+						\item\textbf{SVL} ad indicare il processo di Sviluppo;
+						\item\textbf{QLT} ad indicare il processo di Gestione della Qualità;
+						\item\textbf{DCM} ad indicare il processo di Documentazione;
+						\item\textbf{CNF} ad indicare il processo di Gestione della Configurazione;
+						\item\textbf{PRB} ad indicare il processo di Gestione dei Problemi Accidentali;
+						\item\textbf{VRF} ad indicare il processo di Verifica;
+						\item\textbf{VLD} ad indicare il processo di Validazione;
+						\item\textbf{CRD} ad indicare il processo di Coordinamento;
 						\item\textbf{PNF} ad indicare il processo di Pianificazione.
 					\end{itemize}
 		\subsubsection{Stesura informale}
@@ -391,12 +391,12 @@
 					\item\colorbox{bubblegum}{Evidenziare un testo in rosa}: Serve a evidenziare un contenuto instabile difficilmente tracciabile che può subire una modifica a seguito di una decisione a monte, è utile in questo caso aiutarsi a tracciare con un commento questa dipendenza, (vedi sezione successiva).\\
 				\end{itemize}
 			\paragraph{Prefissi di commenti}
-				Usare questi prefissi prima del testo del documento per uniformare l’intento del commento, velocizzare la ricerca dello stesso, (le parentesi quadre {[ ]} sono comprese nel prefisso)\\
+				Usare questi prefissi prima del testo del documento per uniformare l’intento del commento, velocizzare la ricerca dello stesso, (le parentesi quadre {[ ]} sono comprese nel prefisso).\\
 				\begin{itemize}
-					\item\textbf{[VEDI]}]: da usare quando il testo deve fare riferimento a una parte del repository o a sezioni di altri documenti o dello stesso documento ma il sistema ancora instabile e risulta imprudente stabilire in quel momento il riferimento definitivo; \\
+					\item\textbf{[VEDI]}: da usare quando il testo deve fare riferimento a una parte del repository o a sezioni di altri documenti o dello stesso documento ma il sistema ancora instabile e risulta imprudente stabilire in quel momento il riferimento definitivo; \\
 					\item\textbf{[TODO]}: da usare quando la sezione è da completare ma è un compito che non è vincolato da conseguimenti esterni, come richieste di delucidazioni o decisioni all’intero gruppo; \\
-					\item\textbf{[GRUPPO]}: indica una porzione di testo che richiede l’approvazione o l’intervento di uno o più membri esterni all’insieme di redattori dello specifico documento;
-					\item\textbf{[PROGRESSIVO]}: indica che in quel punto deve essere aggiunto un numero progressivo riferito per esempio ad un’immagine, tabella o nota a piè pagina. \\
+					\item\textbf{[GRUPPO]}: indica una porzione di testo che richiede l’approvazione o l’intervento di uno o più membri esterni all’insieme di redattori dello specifico documento;\\
+					\item\textbf{[PROGRESSIVO]}: indica che in quel punto deve essere aggiunto un numero progressivo riferito per esempio ad un’immagine, tabella o nota a piè pagina; \\
 					\item\textbf{[PIÈ PAGINA]}: permette di definire un testo per la parola evidenziata che verrà inserito a piè pagina una volta formattato con LaTeX.
 				\end{itemize}
 
@@ -428,7 +428,7 @@
 					\item\textbf{QM-PD-DOC01 Indice di Gulpease (GULP)}
 						\begin{itemize}
 							\item\textbf{Descrizione}: la metrica GULP permette di misurare la leggibilità di un documento basandosi sulla formula riportata di seguito;
-							\item\textbf{Unità di misura}: numero intero
+							\item\textbf{Unità di misura}: numero intero;
 							\item\textbf{Formula}: \\
 								\[GULP = 89+ \frac{300\times\#\mathit{frasi} -10\times\#lettere}{\#parole}\]
 								
@@ -444,7 +444,7 @@
 					\item\textbf{QM-PD-DOC02 Correttezza ortografica(CORT)} 
 						\begin{itemize}
 							\item\textbf{Descrizione}: la metrica CORT permette di misurare la correttezza, a livello lessicografico, di un documento;
-							\item\textbf{Unità di misura}: numero intero
+							\item\textbf{Unità di misura}: numero intero;
 							\item\textbf{Formula}: \\
 								\[CORT = \# \mathit{numero\;di\;errori\;ortografici}\]
 							\item\textbf{Risultato}: il risultato della formula ha i seguenti significati:
@@ -487,7 +487,7 @@
 				\begin{itemize}
 					\item\textbf{<X>} rappresenta la versione stabile del documento rilasciata al pubblico, approvata dal Responsabile di Progetto, che autorizza l’incremento del numero della versione. La numerazione inizia da 0;
 					\item\textbf{<Y>} rappresenta una versione parzialmente stabile del documento, soggetta a verifica e approvazione da parte del Verificatore. Concettualmente potrebbe essere confrontato alla funzione dei test di integrazione nel software. La numerazione inizia da 0, viene incrementata dal Verificatore a ogni verifica, e riparte da questo valore ad ogni incremento di X;
-					\item\textbf{<Z>} rappresenta una versione instabile del documento in quanto è in fase di elaborazione da parte dei redattori. Concettualmente potrebbe essere confrontato alla funzione dei test di unità nel software. La numerazione inizia da 0, viene incrementata dai redattori a ogni modifica, e riparte da questo valore ad ogni incremento di X o Y.
+					\item\textbf{<Z>} rappresenta una versione instabile del documento in quanto è in fase di elaborazione da parte dei redattori. Concettualmente potrebbe essere confrontato alla funzione dei test di unità nel software. La numerazione inizia da 0, viene incrementata dai redattori a ogni modifica, e riparte da questo valore ad ogni incremento di X o Y;
 					\item\textbf{<cifreAggiuntive>} sono cifre separate da un punto ‘ . ‘ servono ad identificare delle sotto attività che sono state svolte per completare una fase di elaborazione da parte dei redattori/programmatori.
 				\end{itemize}
 			\paragraph{Scelta del sistema di versionamento}
@@ -496,7 +496,7 @@
 				Il gruppo EverBuilds ha deciso di spartire la mole di informazioni richiesta in più repository:
 				\begin{itemize}
 					\item una per il versionamento dei documenti redatti \url{https://github.com/everbuilds/Docs} ;
-					\item per il versionamento del codice prodotto si farà affidamento su specifici repository git, al momento non specifichiamo il loro nominativo perché non sono stati ancora creati
+					\item per il versionamento del codice prodotto si farà affidamento su specifici repository git, al momento non specifichiamo il loro nominativo perché non sono stati ancora creati.
 				\end{itemize}
 				Si è deciso di separare il codice dai documenti tenendo distinte le sezioni che riguardano la parte di implementazione da quelle che raccolgono la documentazione ad essa relativa.\\
 			\paragraph{Struttura del repository}
@@ -504,7 +504,7 @@
 				\begin{itemize}
 					\item\textbf{Documentazione}:
 						\begin{itemize}
-							\item\textbf{Template}: cartella contenente i file di template in linguaggio LATEX, usati per assemblare tutti i documenti. 
+							\item\textbf{Template}: cartella contenente i file di template in linguaggio LATEX, usati per assemblare tutti i documenti;
 							\item\textbf{Esterni}: cartella contenente i documenti che saranno poi resi disponibili ai committenti e al proponente quali Analisi dei Requisiti, Piano di Progetto, Piano di Qualifica, Verbali esterni, Glossario, Lettera di presentazione;
 							\item\textbf{Interni}: cartella contenente i documenti privati necessari al gruppo come Norme di Progetto, Studio di Fattibilità e Verbali interni.
 							
@@ -523,7 +523,7 @@
 				Il repository Docs è composto da diversi branch:
 				\begin{itemize}
 					\item\textbf{master}: su cui vengono riportati i documenti nella loro versione definitiva approvata dal Responsabile di Progetto e pronta per la consegna ai destinatari;
-					\item\textbf{develop}: ramo di sviluppo in cui vengono riportati incrementalmente le modifiche apportate ai documenti e il codice, I documenti e il codice qui memorizzati devono essere stati verificati.
+					\item\textbf{develop}: ramo di sviluppo in cui vengono riportati incrementalmente le modifiche apportate ai documenti e il codice, I documenti e il codice qui memorizzati devono essere stati verificati;
 					\item\textbf{feature/<titoloIdentificativo>}: dove \textbf{<titoloIdentificativo>} è un titolo composto da parole con iniziali minuscole separate dal trattino ‘-’. Il titolo deve essere più descrittivo possibile per identificare il soggetto del branch cioè la feature da implementare.
 				\end{itemize}
 				Questa divisione è orientata ad uno sviluppo per feature, per cui, per lavorare alla stesura di un documento nel proprio repository locale, ogni membro del gruppo deve:
@@ -632,7 +632,7 @@
 			La procedure che descrivono lo svolgimento dell’attività di verifica sono rappresentate nel seguente diagramma delle attività \\
 			\begin{figure}[H]
     				\centering
-    				\includegraphics[width=1.0\textwidth]{res/images/attività_di_verifica.png}
+    				\includegraphics[width=1.0\textwidth]{res/images/attivita_di_verifica.png}
 				\caption{Img.5 attività di verifica}
 				\label{fig:Img.5 attività di verifica}
 			\end{figure}
@@ -646,15 +646,15 @@
 		\subsubsection{Verifica del codice}
 			Il codice deve essere verificato dai verificatori adottando le strategie riportate in questa sezione, esse si basano su principi a cui devono tendere tutti i verificatori, progettisti e codificatori, questi criteri sono:
 			\begin{itemize}
-				\item  codice testabile, corretto e rispettoso di quando dichiarato dai requisiti e dallo standard di codifica adottato e dal way of working scelto dal gruppo
-				\item il codice deve essere tracciato in un requisito a livello progettuale. 
+				\item  codice testabile, corretto e rispettoso di quando dichiarato dai requisiti e dallo standard di codifica adottato e dal way of working scelto dal gruppo;
+				\item il codice deve essere tracciato in un requisito a livello progettuale; 
 				\item interfacce e dati consistenti e che minimizzano l’accoppiamento tra le componenti.
 			\end{itemize}
 			\paragraph{Analisi Statica}
 				L’analisi statica non coinvolge unicamente la verifica dei documenti ma anche quella del codice prodotto. A fronte di questa osservazione si è scelto di impiegare per l’attività di analisi statica del codice le seguenti strategie
 				\begin{itemize}
 					\item\textbf{Walkthrough}: analogo alla strategia descritta alla sezione §3.5.2.1 ;
-					\item\textbf{Inspection}: analogo alla strategia descritta alla sezione §3.5.2.2, con la differenza che le liste di controllo del codice adottate per svolgere l’attività si trovano alla sezione §5.1.2.
+					\item\textbf{Inspection}: analogo alla strategia descritta alla sezione §3.5.2.2, con la differenza che le liste di controllo del codice adottate per svolgere l’attività si trovano alla sezione §5.1.2 ;
 					\item\textbf{Analisi statica automatizzata}: Nel progetto utilizzeremo uno strumento per automatizzare l'analisi statica del codice, nel paragrafo successivo definiremo le regole che possono essere verificate in questo modo.
 				\end{itemize}
 				\subparagraph{Norme Analisi statica automatizzata}
@@ -663,11 +663,11 @@
 				L’analisi dinamica è una tecnica di verifica attuata testando il codice generato per mezzo della sua esecuzione. Su di esso vengono generati ed eseguiti una serie di test case, per verificarne il corretto funzionamento e per rilevare eventuali scostamenti tra i risultati ottenuti e quanto atteso. \\
 				Tutti i test devono rispettare i seguenti criteri: \\
 				\begin{itemize}
-					\item Devono essere ripetibili
-					\item Devono specificare l’ambiente di esecuzione e lo stato iniziale consentito
-					\item Devono specificare gli input e output richiesti
-					\item Devono notificare un eventuale esito negativo
-					\item Devono fornire informazioni circa i risultati dell’ esecuzione.
+					\item Devono essere ripetibili;
+					\item Devono specificare l’ambiente di esecuzione e lo stato iniziale consentito;
+					\item Devono specificare gli input e output richiesti;
+					\item Devono notificare un eventuale esito negativo;
+					\item Devono fornire informazioni circa i risultati dell’ esecuzione;
 					\item Se necessarie per una corretta comprensione del test devono riportare delle informazioni aggiuntive di tipo descrittivo.
 				\end{itemize}
 				\paragraph{Test unità}

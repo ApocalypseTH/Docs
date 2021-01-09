@@ -69,7 +69,7 @@
 					Grazie ad un approccio investigativo si sono ricavati i requisiti da queste fonti:\\
 					\begin{itemize}
 						\item\textbf{capitolati d’appalto}: con un’ analisi e approfondimento dello stesso si sono individuati dei requisiti esposti dalla Zero12;
-						\item\textbf{analisi di dominio}: Abbiamo preso in considerazione il dominio in cui verrà a situarsi il prodotto una volta finito, ovvero il contesto videoludico. Da questa analisi sono sorti requisiti aggiuntivi che risulta naturale aspettarsi da un prodotto di quella tipologia.
+						\item\textbf{analisi di dominio}: Abbiamo preso in considerazione il dominio in cui verrà a situarsi il prodotto una volta finito, ovvero il contesto videoludico. Da questa analisi sono sorti requisiti aggiuntivi che risulta naturale aspettarsi da un prodotto di quella tipologia;
 						\item\textbf{verbali interni}:il requisito è emerso dalle riunioni e dal confronto tra i membri del team di progetto;
 						\item\textbf{verbali esterni}: il requisito si è ottenuto a seguito di contatti e discussioni con il proponente;
 						\item\textbf{casi d’uso}: il requisito è stato estrapolato dall'analisi di uno o più casi d’uso.
@@ -125,7 +125,18 @@
 					\item\textbf{Descrizione}: descrizione breve, completa e il meno ambigua possibile dello scopo del requisito;
 					\item\textbf{Fonti}: indica il luogo da dove deriva il requisito, individuato tra: Capitolato d’Appalto, Verbali Interni, Verbali Esterni e Casi d’uso.
 				\end{itemize}
-				La struttura da usare sarà:\\
+				La struttura da usare sarà:
+				\begin{center}
+					\rowcolors{2}{lightest-grayest}{white}
+					\begin{longtable}{|p{4.5cm}|p{4.5cm}|p{4.5cm}|}
+						\hline
+						\rowcolor{lighter-grayer}
+						\textbf{Requisito} & \textbf{Descrizione} & \textbf{Fonti}\\
+						\hline
+						\endfirsthead
+						R1V1 & L’utente può visualizzare una guida del gioco. & Capitolato d'Appalto  \\
+					\end{longtable}
+				\end{center}
 				%-- manca la tabella --%
 			\paragraph{Classificazione Casi d’uso}
 				Il codice di ogni caso d'uso seguirà questo formalismo:
@@ -169,14 +180,14 @@
 					\item\textbf{Attori}: Utente non autenticato;
 					\item\textbf{Scopo e descrizione}: L’utente desidera registrarsi con un nuovo account inserendo dei dati personali;
 					\item\textbf{Precondizione}: L’applicazione è stata avviata;
-					\item\textbf{Flusso principale degli eventi}
+					\item\textbf{Flusso principale degli eventi:}
 						\begin{enumerate}
 							\item Inserimento nome utente (UC2.1)
 							\item Inserimento email (UC2.2)
 							\item Inserimento password (UC2.3)
 							\item Conferma registrazione (UC2.4)
 						\end{enumerate}
-					\item\textbf{Scenari alternativi}
+					\item\textbf{Scenari alternativi:}
 						\begin{itemize}
 							\item Se l’utente ha inserito dei dati non validi il sistema interrompe la fase di registrazione e mostra un errore (UC11 Visualizzazione errore di registrazione).
 						\end{itemize}
