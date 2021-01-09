@@ -1,0 +1,89 @@
+\newcommand{\docNome}{ PIANI DI PROGETTO }
+\newcommand{\docNomeProgetto}{ RGP PROJECT }
+\newcommand{\docVersione}{0.0.9}
+\newcommand{\docStatus}{in approvazione}
+\newcommand{\docUso}{esterno}
+\newcommand{\docDescrizione}{
+	Riassunto del piano di progetto del gruppo EverBuilds per il progetto offerto da zero12.
+}
+
+\newcommand{\docDestinatari}{
+	Tullio Vardanega \\&
+    Riccardo Cardin
+}
+\newcommand{\docRedattori}{
+	Giovanni Michieletto \\&
+    Samuele Sartor
+}
+\newcommand{\docVerificatori}{
+	nome cognome \\&
+    nome cognome
+}
+\newcommand{\docApprovazione}{
+    nome cognome
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+% ----- NON MODIFICARE SOTTO QUESTA RIGA -----
+
+% ---------------------------
+% Configurazioni
+% ---------------------------
+
+\documentclass[11pt,a4paper,table]{article}
+
+\input{res/config}    
+
+% ---------------------------
+% Dati frontespizio
+% ---------------------------
+
+\title{\hr \huge \textsc{\docNome} \\ 
+        \vspace{11pt} \large \textsc{\docNomeProgetto} \hr}
+
+\author{} % Non toccare
+\date{} % Non toccare
+
+% ---------------------------
+% Composizione del documento
+% ---------------------------
+
+\begin{document} 
+\mdseries
+% Frontespizio
+
+\pagenumbering{gobble}
+\DeactivateBG
+\include{res/first_page}
+
+% Registro delle modifiche
+
+\newpage
+\pagenumbering{arabic}
+\include{res/register}
+
+% Tabella dei contenuti
+
+\newpage
+\tableofcontents
+
+% Sezioni
+
+\newpage
+\input{res/sections}
+
+\end{document}
+
+
+% EOF
