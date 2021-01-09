@@ -33,95 +33,140 @@
 
 	
 			\hline
-			TS-1 & Si verifichi che l'utente possa fare il \glock{login} con il proprio \glock{account} & NI \\
+			% registrazione
+			TS-1 & Si verifichi che l'utente possa creare un \glock{account} inserendo
+			  \begin{itemize}
+			 	\item\textbf{1.1} Nome utente
+			 	\item\textbf{1.2}  \glock{Email}
+			 	\item\textbf{1.3}  \glock{Password}
+			 \end{itemize}:& NI \\
 			 \hline
-			 TS-2 & Si verifichi che l'utente possa creare un \glock{account} & NI \\
+			 TS-2 & Si verifichi che venga mostrato all'utente dopo la conferma della registrazione un messaggio d'errore se:
+			  \begin{itemize}
+			 	\item\textbf{2.1} il nome utente è già in uso
+			 	\item\textbf{2.2}  l'\glock{email} è già in uso
+			 	\item\textbf{2.3}  la \glock{password} non è valida
+			 \end{itemize}:& NI \\
 			 \hline
-			 TS-3 & Si verifichi che l'utente possa modificare le impostazioni di gioco & NI \\
-			 \hline
-			 TS-4 & Si verifichi che l'utente autenticato possa accedere alla sezione per la modifica dei dati per proprio \glock{account}:
+			 
+			 
+			 
+			 % login
+			TS-3 & Si verifichi che l'utente possa fare il \glock{login} con il proprio \glock{account} inserendo
 			 \begin{itemize}
-			 	\item\textbf{4.1} Visualizzazione e cambio nome utente
-			 	\item\textbf{4.2}  Visualizzazione e cambio \glock{email}
-			 	\item\textbf{4.3}  Cambio \glock{password}
+			 	\item\textbf{3.1} Nome utente
+			 	\item\textbf{3.2}  \glock{Password}
+			 \end{itemize}& NI \\
+			 \hline
+			 TS-4 & Si verifichi che venga mostrato all'utente dopo la conferma della registrazione un messaggio d'errore se:
+			 \begin{itemize}
+			 	\item\textbf{4.1} il nome utente non esiste
+			 	\item\textbf{4.2}  la \glock{password} non è corretta
+			 \end{itemize}& NI \\
+			 \hline
+			 
+			 % logout
+			 TS-5 & Si verifichi che l'utente possa effettuare il \glock{logout}, dopo aver fatto il \glock{login} & NI \\
+			 \hline
+			 
+			 % logout
+			 TS-6 & Si verifichi che l'utente possa eliminare il proprio profilo, dopo aver fatto il \glock{login} & NI \\
+			 \hline
+			 
+			 % impostazioni
+			 TS-7 & Si verifichi che l'utente possa modificare le seguenti impostazioni: 
+			  \begin{itemize}
+			 	\item\textbf{7.1} volume musica
+			 	\item\textbf{7.2} volume effetti sonori
+			 	\item\textbf{7.3} visualizzazione avversari
 			 \end{itemize}
 			 & NI \\
 			 \hline
-			 TS-5 & Si verifichi che un utente autenticato possa accedere ad una dashboard che mostra:
-			 \begin{itemize}
-			 	\item\textbf{5.1}  la possibilità di iniziare una partita \glock{single-player};
-			 	\item\textbf{5.2}  la possibilità di iniziare una partita \glock{multi-player};
-			 	\item\textbf{5.3}  la possibilità di silenziare il gioco;
-			 \end{itemize} & NI \\
+			 
+			 % classifica
+			 TS-8 & Si verifichi che l'utente possa visualizzare le seguenti classifiche:
+			  \begin{itemize}
+			 	\item\textbf{8.1} punteggio per giocatore per ogni partita
+			 	\item\textbf{8.2} partite più durature di tutti i giocatori
+			 \end{itemize}
+			 & NI \\
 			 \hline
-			 TS-6 & Si verifichi che un utente possa visualizzare la \glock{dashboard} dei risultati di gioco  & NI \\
+			 
+			 % inizio partita
+			 TS-9 & Si verifichi che agli utenti non autenticati venga associato un identificativo autogenerato & NI \\
 			 \hline
-			 TS-7 & Si verifichi che un utente possa una classifica generale di tutto il gioco  & NI \\
+			 TS-10 & Si verifichi che l'utente possa iniziare una partita:
+			  \begin{itemize}
+			 	\item\textbf{10.1} \glock{single player}
+			 	\item\textbf{10.2}  \glock{multi player}
+			 \end{itemize}
+			 & NI \\
 			 \hline
-			 TS-8 & Si verifichi che un utente autenticato in partita singola possa mettere in pausa il gioco & NI \\
+			 
+			 % gestione partita
+			 TS-11 & Si verifichi che un utente possa abbandonare una partita & NI \\
 			 \hline
-			 TS-9 & Si verifichi che un utente in partita possa spostare la sua posizione corrente & NI \\
+			 
+			 % iterazione partita
+			 TS-12 & Si verifichi che un utente durante una partita possa sposare il proprio giocatore & NI \\
+			
+			 TS-13 & Si verifichi che un utente in partita possa accumulare \glock{power-up} & NI \\
 			 \hline
-			 TS-10 & Si verifichi che un utente in partita perda vita in caso di collisione con nemico & NI \\
+			 TS-14 & Si verifichi che un utente in partita perda vita in caso di collisione con nemico & NI \\
 			 \hline
-			 TS-11 & Si verifichi che un utente in partita possa accumulare \glock{power-up} & NI \\
+			 TS-15 & Si verifichi che un utente possa giocare al massimo contro 5 avversari in \glock{multi-player} & NI \\
 			 \hline
-			 TS-12 & Si verifichi che un utente possa giocare al massimo contro 5 avversari in \glock{multi-player} & NI \\
+			 TS-16 & Si verifichi che un utente possa giocare all'infinito & NI \\
 			 \hline
-			 TS-13 & Si verifichi che un utente possa giocare all'infinito & NI \\
+			 TS-17 & Si verifichi che il sistema avvia la partita dopo 30 secondi a partire da quando c’è un numero minimo di giocatori nella lobby & NI \\
+			 \hline 
+			 TS-18 & Si verifichi che il \glock{power-up Cuore} deve aumentare di un’unità la vita del giocatore & NI \\
+			 \hline
+			 TS-19 &Si verifichi che il \glock{power-up Cuore} può comparire quando il giocatore ha perso almeno un’unità di vita. & NI \\
+			  \hline
+			 TS-20  & Si verifichi che il \glock{power-up Cambio arma casuale} modifichi casualmente la modalità di fuoco della navicella  &NI \\
+			  \hline
+			 TS-21  & Si verifichi che il \glock{power-up Scudo} azzera i danni subiti per un determinato lasso di tempo.  &NI \\
+			 \hline
+			 TS-22  & Si verifichi che la difficoltà cresca all'aumentare del punteggio della partita.  &NI \\
+			 \hline
+			 TS-23  & Si verifichi che se il giocatore è colpito da un nemico, gli venga sottratto un $\delta$ dalla vita.  &NI \\
+			 \hline
+			 TS-24 & Si verifichi che il giocatore possa giocare contro al massimo altri 5 giocatori & NI \\
 			 \hline
 			  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Test di sistema per i requisiti prestazionali %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-			 TS-14 & Si verifichi che il server supporti carichi pesanti di richieste & NI \\ 
+			 TS-25 & Si verifichi che il periodo che intercorre tra la ricezione della richiesta e l'inizio dell'invio della risposta sia inferiore a  200 ms. & NI \\ 
 			 \hline
-			 TS-15 & Si verifichi che il server supporti richieste da dispositivi di natura diversa & NI \\
+			 TS-26 & Si verifichi che la documentazione delle \glock{API} sia esaustiva e completa & NI \\
 			 \hline
-			 TS-16 & Si verifichi che l'applicazione non sia eccessivamente \glock{CPU-intensive} comportando surriscaldamento & NI \\
+			 TS-27 & Si verifichi che il codice sorgente venga gestito tramite un sistema di versionamento. & NI \\
 			 \hline
-			 TS-17 & Si verifichi che i tempi di risposta della web app sia inferiore ai 3 secondi & NI \\
+			 TS-28 & Si verifichi che il codice sorgente sia testato prima di esser integrato. & NI \\
 			 \hline
-			 TS-18 & Si verifichi che la documentazione delle \glock{API} sia esaustiva e completa & NI \\
+			 TS-29 & Si verifichi che siano stati realizzati dei test di unità e di integrazione per verificare le singole componenti e i \glock{subsystem} interni. & NI \\
 			 \hline
-			 TS-19 & Si verifichi che il codice sorgente venga gestito tramite un sistema di versionamento. & NI \\
+			 TS-30 & Si verifichi che il sistema sia basato a \glock{microservizi} & NI \\
 			 \hline
-			 TS-20 & Si verifichi che il codice sorgente sia testato prima di esser integrato. & NI \\
-			 \hline
-			 TS-21 & Si verifichi che siano stati realizzati dei test di unità e di integrazione per verificare le singole componenti e i \glock{subsystem} interni. & NI \\
-			 \hline
-			 TS-22 & Si verifichi che l'\glock{API} risponda tramite \glock{JSON} valido & NI \\
-			 \hline
-			 TS-23 & Si verifichi che l'\glock{API} sia sviluppata tramite \glock{NodeJS} & NI \\
-			 \hline
-			 TS-24 & Si verifichi che l'infrastruttura funzioni a \glock{microservizi}: 
+			 TS-31 & Si verifichi che l'infrastruttura abbia almeno: 
 			 \begin{itemize}
-			 	\item\textbf{24.1} almeno un \glock{microservizio} per l'autenticazione;
-			 	\item\textbf{24.2} almeno un \glock{microservizio} per la gestione delle classifiche;
+			 	\item\textbf{31.1} almeno un \glock{microservizio} per l'autenticazione;
+			 	\item\textbf{31.2} almeno un \glock{microservizio} per la gestione delle classifiche;
+			 	\item\textbf{31.2} almeno un \glock{microservizio} per la gestione della partita;
 			 \end{itemize}& NI \\
 			 \hline
-			 TS-25 & Si verifichi che i servizi di hosting siano basati su \glock{AWS} & NI \\ 
-			 \hline
-			 TS-26 & Si verifichi che il sistema faccia uso di \glock{HTTP} per la comunicazione con l'\glock{API}. & NI \\
-			 \hline
-			 TS-27 & Si verifichi che il sistema sia basato a \glock{microservizi} & NI \\
-			 \hline
-			 TS-28 & Si verifichi che il sistema faccia uso \glock{API} per la comunicazione con i \glock{client} & NI \\
-			 \hline
-			 TS-29 & Si verifichi che le \glock{API} rispondano usando standard \glock{JSON} & NI \\
-			 \hline
-			 TS-30 & Si verifichi che il sistema supporti almeno 6 giocatori & NI \\
-			 \hline
-			 TS-31 & Si verifichi che il sistema permetta la comunicazione tra client con Sistemi Operativi di versioni diverse & NI \\
-			 \hline
-			 TS-32 & Si verifichi che il sistema permetta l'invio di dati dal client& NI \\
+			 TS-32 & Si verifichi che il sistema supporti almeno 6 giocatori & NI \\
 			 \hline
 			 TS-33 & Si verifichi che il sistema permetta di distinguere un giocatore da un'altro & NI \\
 			 \hline
-			 TS-34 & Si verifichi che ogni parte del sistema sia testata adeguatamente & NI \\
+			 TS-34 & Si verifichi che la scelta della tecnologia del servizio di hosting sia ben fondata e documentata & NI \\
 			 \hline
-			 TS-35 & Si verifichi che la scelta della tecnologia di hosting sia ben fondata e documentata & NI \\
+			 TS-35 & Si verifichi che la scelta della tecnologia di sviluppo dell'applicazione sia fondata e documentata & NI \\
 			 \hline
-			 TS-36 & Si verifichi che i \glock{microservizi} siano indipendenti tra di loro & NI \\ 
+			 TS-36 & Si verifichi che la scelta della tecnologia di sviluppo lato server sia fondata e documentata & NI \\
 			 \hline
-			 TS-37 & Si verifichi che la connessione al \glock{server} avvenga tramite l'applicazione \glock{client} & NI \\
+			 TS-37 & Si verifichi che i \glock{microservizi} siano indipendenti tra di loro & NI \\ 
+			 \hline
+			 TS-38 & Si verifichi che sia fornito un bug reporting dello sviluppo & NI \\ 
 			 \hline
 			 \caption{Tabella contenente un riepilogo dei test di sistema}
 			\end{longtable}
