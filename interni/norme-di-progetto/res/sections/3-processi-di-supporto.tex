@@ -41,7 +41,7 @@
 			dove:
 			\begin{itemize}
 				\item\textbf{<soggettoMetrica>}: può assumere i valori: PD, PC e TS dove PD indica che la caratteristica è associata al prodotto,  PC la caratteristica associata a un processo e TS ad un test del prodotto.
-				\item\textbf{<siglaProcessoInteressato>}: può assumere il valore di una delle sigle di processo riportate alla sezione 000, essa indica il processo soggetto della caratteristica oppure il processo che si fa carico di gestire la specifica caratteristica del prodotto.
+				\item\textbf{<siglaProcessoInteressato>}: può assumere il valore di una delle sigle di processo riportate alla sezione §3.2.6.5.2, essa indica il processo soggetto della caratteristica oppure il processo che si fa carico di gestire la specifica caratteristica del prodotto.
 				\item\textbf{<numeroProgressivo>}: è un numero progressivo all’interno della sotto lista identificata dai primi 3 attributi, necessariamente di 2 cifre.
 			\end{itemize}
 			Un esempio facilmente reperibile di descrizione di una norma si trova nella sezione seguente.
@@ -126,7 +126,7 @@
 		\subsubsection{Ciclo di vita della documentazione formale}
 			Può essere necessario produrre più versioni per uno stesso documento formale, questo per garantire un processo incrementale che li porterà a soddisfare in economicità i soli requisiti a cui devono adempiere in una specifica fase del progetto.\\
 			Per questa ragione il documento può richiedere molteplici approvazioni nel suo ciclo di vita.\\
-			Ogni azione che porta il documento a transitare da uno stadio ad un altro esposti nel diagramma successivo deve comportare una modifica del suo codice di versione, modifica che deve rispettare le norme esposte al paragrafo 000.\\
+			Ogni azione che porta il documento a transitare da uno stadio ad un altro esposti nel diagramma successivo deve comportare una modifica del suo codice di versione, modifica che deve rispettare le norme esposte al paragrafo §3.2.4.2.\\
 			\begin{figure}[H]
     				\centering
     				\includegraphics[width=1.0\textwidth]{res/images/ciclo_di_vita.png}
@@ -144,13 +144,13 @@
 				\end{itemize}
 			\paragraph{Avanzamento di versione}
 				Ogni volta che si effettueranno delle modifiche nel documento, queste verranno registrate in un apposito registro e classificate con un specifico codice. Questo varrà anche per il passaggio del documento da essere informale a diventare formale e definitivo.
-				Per maggiori dettagli vedi sezione 3.3.2.1.
+				Per maggiori dettagli vedi sezione §3.3.2.1.
 
 
 		\subsubsection{Struttura Documenti}
 			\paragraph{Template utilizzati }
 				Il gruppo ha deciso di adottare il linguaggio LATEX per la stesura dei documenti. \\
-				Ogni documento dovrà essere realizzato a partire da un template LATEX appropriato reperibile al percorso 000, la scelta del template da utilizzare si basa sulla classificazione dei tipi di documenti esposta alla sezione 000.\\
+				Ogni documento dovrà essere realizzato a partire da un template LATEX appropriato reperibile al percorso 000, la scelta del template da utilizzare si basa sulla classificazione dei tipi di documenti esposta alla sezione §3.2.2 .\\
 				I template e gli script associati vanno utilizzati con lo scopo di semplificare, uniformare e automatizzare il più possibile la procedura di adeguamento alle norme per la redazione del documento.\\
 			\paragraph{Struttura documento generico}
 				\subparagraph{Frontespizio}
@@ -185,7 +185,7 @@
 					Ogni documento presenta un registro delle modifiche, sotto forma di tabella, che tiene traccia di tutte le modifiche significative apportate al documento durante le fasi del suo ciclo di vita. \\
 					Ogni riga del diario dovrà contenere i seguenti elementi: \\
 					\begin{itemize}
-						\item\textbf{Versione}: l numero di versione assegnato al documento. Tale numero viene assegnato in base alle norme previste nella sottosezione 000 relativa al versionamento;
+						\item\textbf{Versione}: il numero di versione assegnato al documento. Tale numero viene assegnato in base alle norme previste nella sottosezione §3.3.2.1 relativa al versionamento;
 						\item\textbf{Descrizione}: Campo composto dal codice numerico della sezione modificata e da una breve descrizione delle modifiche apportate;
 						\item\textbf{Data}: Identifica la data in cui è avvenuta la modifica;
 						\item\textbf{Autore}: Il soggetto che ha apportato le modifiche interessate dalla specifica riga;
@@ -203,7 +203,7 @@
 								\item In alto a destra si trova il nome del capitolo trattato nella pagina in considerazione.
 							\end{itemize}
 						\item\textbf{Contenuto} \\
-							Il contenuto deve rispettare rigidamente le norme tipografiche espresse nel paragrafo 000 e garantite in parte dalla compilazione del template LATEX.
+							Il contenuto deve rispettare rigidamente le norme tipografiche espresse nel paragrafo §3.2.6 e garantite in parte dalla compilazione del template LATEX.
 						\item\textbf{Note a piè pagina} \\
 							In caso di presenza di note da esplicare, esse vanno indicate nella pagina corrente, in basso a sinistra. Ogni nota deve riportare un numero e una descrizione.
 						\item\textbf{Footer}
@@ -214,7 +214,7 @@
 					\end{itemize}
 			\paragraph{Struttura documenti specializzati}
 				\subparagraph{Struttura Verbale}
-					Ai Verbali, sia interni che esterni, si applicano le medesime norme strutturali degli altri documenti esposte nella sezione 000. \\
+					Ai Verbali, sia interni che esterni, si applicano le medesime norme strutturali degli altri documenti esposte nella sezione §3.2.5.2. \\
 					I Verbali aggiungono rispetto agli altri documenti i seguenti elementi strutturali:
 					\begin{itemize}
 						\item\textbf{Informazioni Generali}, composto dalle seguenti informazioni:
@@ -233,8 +233,8 @@
 							\end{center}
 							Dove il numero di una decisione è assegnato in modo progressivo partendo da 1.
 					\end{itemize}
-				\subparagraph{Struttura Verbale}
-					Al glossario si applicano le medesime norme strutturali degli altri documenti esposte alla sezione 000, oltre che alle seguenti ulteriori norme:\\
+				\subparagraph{Struttura Glossario}
+					Al glossario si applicano le medesime norme strutturali degli altri documenti esposte alla sezione §3.2.5.2, oltre che alle seguenti ulteriori norme:\\
 					\begin{itemize}
 						\item I  termini sono ordinati secondo un criterio lessicografico; 
 						\item Le lettere dell'alfabeto definiscono il primo e ultimo livello dell’albero gerarchico del documento e quindi dell’indice. Ogni capitolo sottende l’insieme dei termini che hanno come carattere iniziale la lettera che nomina il capitolo in questione; 
@@ -242,7 +242,7 @@
 						\item Un termine inizialmente può non contenere definizione. Tale modalità è da preferirsi al rimandare l’inserimento del termine nel glossario.
 					\end{itemize}
 				\subparagraph{Struttura Studio di Fattibilità}
-					Allo Studio di Fattibilità si applicano le medesime norme strutturali degli altri documenti esposte alla sezione 000. \\
+					Allo Studio di Fattibilità si applicano le medesime norme strutturali degli altri documenti esposte alla sezione §3.2.5.2 . \\
 					I capitoli del corpo del documento espongono ciascuno uno dei capitolati proposti dal committente. I redattori, nell’esposizione di ciascun capitolato, devono compilare in modo esaustivo la lista di punti seguente: 
 					\begin{itemize}
 						\item\textbf{Informazioni Generali}, composto dalle seguenti informazioni:
@@ -258,7 +258,7 @@
 						\item\textbf{criticità e fattori di rischio;}
 						\item\textbf{conclusioni.}
 					\end{itemize}
-					Per un maggiore dettaglio vedi sezione 000.
+					Per un maggiore dettaglio vedi sezione §2.1.2.1 .
 		\subsubsection{Norme tipografiche}
 			\paragraph{Convenzioni di denominazione}
 				I nomi dei file e delle directory, escludendo l’estensione del file utilizzano le seguenti convenzioni:\\
@@ -274,7 +274,7 @@
 					dove: \\
 					\begin{itemize}
 						\item\textbf{<NomeDocumento>}: corrisponde al nome ufficiale del documento; 
-						\item\textbf{v} sta per versione e \textbf{<x>.<y>.<z>} rispettano quanto è indicato alla sezione §3.3.2.1 relativa al versionamento dei documenti
+						\item\textbf{v} sta per versione e \textbf{<x>.<y>.<z>} rispettano quanto è indicato alla sezione §3.3.2.1 relativa al versionamento dei documenti.
 					\end{itemize}
 				\subparagraph{Denominazione documenti informali}
 					La denominazione dei documenti formali seguirà lo schema:  \\
@@ -459,7 +459,7 @@
 				Per la stesura dei documenti si è scelto di utilizzare il linguaggio di markup LaTeX. Il motivo principale che ha portato a questa scelta è la facilità di separazione tra contenuto e formattazione oltre che a consentire uno sviluppo orientato alla modularità, alla collaborazione e alla scalabilità.\\
 				Come editor di testo il gruppo può scegliere di usare TEXstudio se si trova in un ambiente Windows oppure TEXShop se si trova in ambiente LINUX.  \\
 			\paragraph{Google drive e Google Docs}
-				Come citato al paragrafo 000, i redattori scelgono di adottare la tecnologia di scrittura di documenti testuali: Google Docs per redigere le prime bozze della documentazione a loro assegnata utilizzando il servizio web per la memorizzazione e sincronizzazione: Google Drive. \\
+				Come citato al paragrafo §3.2.7, i redattori scelgono di adottare la tecnologia di scrittura di documenti testuali: Google Docs per redigere le prime bozze della documentazione a loro assegnata utilizzando il servizio web per la memorizzazione e sincronizzazione: Google Drive. \\
 				La scelta si basa sulla facilità di utilizzo propria di questa tecnologia, su un sistema efficace per commentare il testo e sulla velocità di sincronizzazione del lavoro dei redattori che lavorano in parallelo, grazie all’utilizzo dell’ambiente di cloud computing: Google Drive. \\
 			\paragraph{StarUML}
 				Il software StarUML verrà adottato per la produzione di diagrammi di attività e diagrammi di casi d’uso necessarie per descrivere rispettivamente: parte delle attività riportate durante il processo Documentazione e i requisiti del prodotto analizzati nel documento “Analisi dei Requisiti”.
@@ -641,7 +641,7 @@
 				Il walkthrough è indispensabile durante lo sviluppo iniziale, quando non si possiede ancora una chiara visione sui possibili errori. Usando più volte questa tecnica sarà possibile stilare una “lista di controllo” dove verranno archiviati gli errori più spesso rilevati. \\
 				Inizialmente le attività di verifica utilizzano in prevalenza la tecnica walkthrough. Non appena i Verificatori avranno stilato una lista di controllo sufficiente, si passerà sempre più frequentemente all’uso della tecnica inspection.\\
 			\paragraph{Inspection}
-				L’inspection si basa sulla lettura mirata del testo. Durante tale lettura si cercano gli errori segnalati nelle liste di controllo appropriate, vedi sezione 000. Progressivamente con l’acquisizione di esperienza la lista di controllo verrà estesa. Questo renderà l’inspection sempre più efficace.
+				L’inspection si basa sulla lettura mirata del testo. Durante tale lettura si cercano gli errori segnalati nelle liste di controllo appropriate, vedi sezione §5.1 . Progressivamente con l’acquisizione di esperienza la lista di controllo verrà estesa. Questo renderà l’inspection sempre più efficace.
 
 		\subsubsection{Verifica del codice}
 			Il codice deve essere verificato dai verificatori adottando le strategie riportate in questa sezione, esse si basano su principi a cui devono tendere tutti i verificatori, progettisti e codificatori, questi criteri sono:
@@ -653,8 +653,8 @@
 			\paragraph{Analisi Statica}
 				L’analisi statica non coinvolge unicamente la verifica dei documenti ma anche quella del codice prodotto. A fronte di questa osservazione si è scelto di impiegare per l’attività di analisi statica del codice le seguenti strategie
 				\begin{itemize}
-					\item\textbf{Walkthrough}: analogo alla strategia descritta alla sezione 000;
-					\item\textbf{Inspection}: analogo alla strategia descritta alla sezione 000, con la differenza che le liste di controllo del codice adottate per svolgere l’attività si trovano alla sezione 000.
+					\item\textbf{Walkthrough}: analogo alla strategia descritta alla sezione §3.5.2.1 ;
+					\item\textbf{Inspection}: analogo alla strategia descritta alla sezione §3.5.2.2, con la differenza che le liste di controllo del codice adottate per svolgere l’attività si trovano alla sezione §5.1.2.
 					\item\textbf{Analisi statica automatizzata}: Nel progetto utilizzeremo uno strumento per automatizzare l'analisi statica del codice, nel paragrafo successivo definiremo le regole che possono essere verificate in questo modo.
 				\end{itemize}
 				\subparagraph{Norme Analisi statica automatizzata}
