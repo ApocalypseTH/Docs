@@ -1,0 +1,133 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {section}{A}{8}{section*.5}%
+\contentsline {subsection}{Account}{8}{section*.6}%
+\contentsline {subsection}{Amministratore}{8}{section*.7}%
+\contentsline {subsection}{Analisi di Dettaglio}{8}{section*.8}%
+\contentsline {subsection}{Analista}{8}{section*.9}%
+\contentsline {subsection}{Android}{8}{section*.10}%
+\contentsline {subsection}{API}{8}{section*.11}%
+\contentsline {subsection}{API Restful}{8}{section*.12}%
+\contentsline {subsection}{Arma}{8}{section*.13}%
+\contentsline {subsection}{Attività}{9}{section*.14}%
+\contentsline {subsection}{Attore}{9}{section*.15}%
+\contentsline {subsection}{Avversario}{9}{section*.16}%
+\contentsline {subsection}{AWS}{9}{section*.17}%
+\contentsline {subsection}{AWS Gamelift}{9}{section*.18}%
+\contentsline {subsection}{AWS AppSync}{9}{section*.19}%
+\contentsline {section}{B}{10}{section*.20}%
+\contentsline {subsection}{Baseline}{10}{section*.21}%
+\contentsline {subsection}{Brainstorming }{10}{section*.22}%
+\contentsline {subsection}{Branch}{10}{section*.23}%
+\contentsline {subsection}{Bug Reporting}{10}{section*.24}%
+\contentsline {section}{C}{11}{section*.25}%
+\contentsline {subsection}{Capitolato}{11}{section*.26}%
+\contentsline {subsection}{Codifica}{11}{section*.27}%
+\contentsline {subsection}{Collaudo}{11}{section*.28}%
+\contentsline {subsection}{Chrome}{11}{section*.29}%
+\contentsline {subsection}{Client}{11}{section*.30}%
+\contentsline {subsection}{Code smell}{11}{section*.31}%
+\contentsline {subsection}{CPU-intensive}{11}{section*.32}%
+\contentsline {section}{D}{12}{section*.33}%
+\contentsline {subsection}{Dashboard}{12}{section*.34}%
+\contentsline {subsection}{Definizione di prodotto}{12}{section*.35}%
+\contentsline {subsection}{Design}{12}{section*.36}%
+\contentsline {subsection}{Design Pattern}{12}{section*.37}%
+\contentsline {subsection}{Diagrammi di Gantt}{12}{section*.38}%
+\contentsline {subsection}{Discord}{12}{section*.39}%
+\contentsline {subsection}{Database}{12}{section*.40}%
+\contentsline {subsection}{DynamoDB}{13}{section*.41}%
+\contentsline {section}{E}{14}{section*.42}%
+\contentsline {subsection}{Efficacia}{14}{section*.43}%
+\contentsline {subsection}{Efficienza}{14}{section*.44}%
+\contentsline {subsection}{Email}{14}{section*.45}%
+\contentsline {subsection}{Endless}{14}{section*.46}%
+\contentsline {section}{F}{15}{section*.47}%
+\contentsline {subsection}{Fase}{15}{section*.48}%
+\contentsline {subsection}{Feature Branch}{15}{section*.49}%
+\contentsline {section}{G}{16}{section*.50}%
+\contentsline {subsection}{Git}{16}{section*.51}%
+\contentsline {subsection}{GitHub}{16}{section*.52}%
+\contentsline {subsection}{GitHub Actions}{16}{section*.53}%
+\contentsline {subsection}{Google Docs}{16}{section*.54}%
+\contentsline {subsection}{Google Drive}{16}{section*.55}%
+\contentsline {subsection}{Google Meet}{16}{section*.56}%
+\contentsline {subsection}{Google Sheet}{16}{section*.57}%
+\contentsline {section}{H}{17}{section*.58}%
+\contentsline {subsection}{HTTP}{17}{section*.59}%
+\contentsline {section}{I}{18}{section*.60}%
+\contentsline {subsection}{Incremento e Verifica}{18}{section*.61}%
+\contentsline {subsection}{Indice di Gulpease}{18}{section*.62}%
+\contentsline {subsection}{Individuazione degli strumenti}{18}{section*.63}%
+\contentsline {subsection}{Inspection}{18}{section*.64}%
+\contentsline {subsection}{IOS}{18}{section*.65}%
+\contentsline {subsection}{Issue}{18}{section*.66}%
+\contentsline {subsection}{ITS, Issue Tracking System}{18}{section*.67}%
+\contentsline {section}{J}{19}{section*.68}%
+\contentsline {subsection}{JSON}{19}{section*.69}%
+\contentsline {section}{K}{20}{section*.70}%
+\contentsline {subsection}{Kotlin}{20}{section*.71}%
+\contentsline {section}{L}{21}{section*.72}%
+\contentsline {subsection}{Lettera di Presentazione}{21}{section*.73}%
+\contentsline {subsection}{Lobby}{21}{section*.74}%
+\contentsline {subsection}{Login}{21}{section*.75}%
+\contentsline {subsection}{Logout}{21}{section*.76}%
+\contentsline {section}{M}{22}{section*.77}%
+\contentsline {subsection}{Manuale utente}{22}{section*.78}%
+\contentsline {subsection}{Meeting}{22}{section*.79}%
+\contentsline {subsection}{Microservizio}{22}{section*.80}%
+\contentsline {subsection}{Milestone}{22}{section*.81}%
+\contentsline {subsection}{Modalità fantasma}{22}{section*.82}%
+\contentsline {subsection}{Modello a V}{22}{section*.83}%
+\contentsline {subsection}{Multiplayer}{22}{section*.84}%
+\contentsline {section}{N}{23}{section*.85}%
+\contentsline {subsection}{Navicella}{23}{section*.86}%
+\contentsline {subsection}{Navicella avversaria}{23}{section*.87}%
+\contentsline {subsection}{Navicella nemica}{23}{section*.88}%
+\contentsline {subsection}{Nemico}{23}{section*.89}%
+\contentsline {subsection}{Node.js}{23}{section*.90}%
+\contentsline {section}{O}{24}{section*.91}%
+\contentsline {subsection}{Open source}{24}{section*.92}%
+\contentsline {section}{P}{25}{section*.93}%
+\contentsline {subsection}{Password}{25}{section*.94}%
+\contentsline {subsection}{PDCA}{25}{section*.95}%
+\contentsline {subsection}{Piano di Progetto (PdP)}{25}{section*.96}%
+\contentsline {subsection}{Power-Up}{25}{section*.97}%
+\contentsline {subsection}{Power-Up Cambio arma}{25}{section*.98}%
+\contentsline {subsection}{Power-Up Cuore}{25}{section*.99}%
+\contentsline {subsection}{Power-Up Scudo}{25}{section*.100}%
+\contentsline {subsection}{Pull-Request (PR)}{25}{section*.101}%
+\contentsline {subsection}{Processi}{26}{section*.102}%
+\contentsline {subsection}{Progettista}{26}{section*.103}%
+\contentsline {subsection}{Programmatore}{26}{section*.104}%
+\contentsline {subsection}{Proof-of-concept (PoC) }{26}{section*.105}%
+\contentsline {section}{R}{27}{section*.106}%
+\contentsline {subsection}{Regressione}{27}{section*.107}%
+\contentsline {subsection}{Repository}{27}{section*.108}%
+\contentsline {subsection}{Responsabile}{27}{section*.109}%
+\contentsline {section}{S}{28}{section*.110}%
+\contentsline {subsection}{Server}{28}{section*.111}%
+\contentsline {subsection}{Serverless}{28}{section*.112}%
+\contentsline {subsection}{Singleplayer}{28}{section*.113}%
+\contentsline {subsection}{Sottoattività}{28}{section*.114}%
+\contentsline {subsection}{Specifica Tecnica}{28}{section*.115}%
+\contentsline {subsection}{SPICE}{28}{section*.116}%
+\contentsline {subsection}{Slack}{28}{section*.117}%
+\contentsline {subsection}{Stakeholder}{29}{section*.118}%
+\contentsline {subsection}{Subsystem}{29}{section*.119}%
+\contentsline {subsection}{Swift}{29}{section*.120}%
+\contentsline {section}{T}{30}{section*.121}%
+\contentsline {subsection}{Telegram}{30}{section*.122}%
+\contentsline {subsection}{Test}{30}{section*.123}%
+\contentsline {section}{U}{31}{section*.124}%
+\contentsline {subsection}{User interface}{31}{section*.125}%
+\contentsline {subsection}{UML, diagrammi UML}{31}{section*.126}%
+\contentsline {section}{V}{32}{section*.127}%
+\contentsline {subsection}{Validazione}{32}{section*.128}%
+\contentsline {subsection}{Version Control System (VCS)}{32}{section*.129}%
+\contentsline {subsection}{Verificatore}{32}{section*.130}%
+\contentsline {subsection}{Versionamento}{32}{section*.131}%
+\contentsline {section}{W}{33}{section*.132}%
+\contentsline {subsection}{Way of working}{33}{section*.133}%
+\contentsline {subsection}{Walkthrough}{33}{section*.134}%
+\contentsline {subsection}{Workflow}{33}{section*.135}%
